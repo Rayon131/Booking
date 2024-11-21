@@ -1,0 +1,14 @@
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\bin\Debug\net8.0\AppData.deps.json
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\bin\Debug\net8.0\AppData.runtimeconfig.json
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\bin\Debug\net8.0\AppData.dll
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\bin\Debug\net8.0\AppData.pdb
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\obj\Debug\net8.0\AppData.csproj.AssemblyReference.cache
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\obj\Debug\net8.0\AppData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\obj\Debug\net8.0\AppData.AssemblyInfoInputs.cache
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\obj\Debug\net8.0\AppData.AssemblyInfo.cs
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\obj\Debug\net8.0\AppData.csproj.CoreCompileInputs.cache
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\obj\Debug\net8.0\AppData.dll
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\obj\Debug\net8.0\refint\AppData.dll
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\obj\Debug\net8.0\AppData.pdb
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\obj\Debug\net8.0\AppData.genruntimeconfig.cache
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\obj\Debug\net8.0\ref\AppData.dll
