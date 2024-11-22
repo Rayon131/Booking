@@ -9,6 +9,8 @@ namespace AppData
     public class LoGo
     {
         public int ID { get; set; }
-        public string Logo  { get; set; }
+        public string? Logo  { get; set; }
+        public bool TrangThai { get; set; }
+
     }
 }

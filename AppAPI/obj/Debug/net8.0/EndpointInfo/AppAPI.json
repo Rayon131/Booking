@@ -2239,6 +2239,9 @@
             "type": "string",
             "nullable": true
           },
+          "trangThai": {
+            "type": "boolean"
+          },
           "loaiPhong": {
             "$ref": "#/components/schemas/LoaiPhong"
           }
@@ -2335,6 +2338,9 @@
             "format": "int32",
             "nullable": true
           },
+          "trangThai": {
+            "type": "boolean"
+          },
           "loaiPhongs": {
             "type": "array",
             "items": {
@@ -2360,41 +2366,8 @@
             "type": "string",
             "nullable": true
           },
-          "fb": {
-            "type": "string",
-            "nullable": true
-          },
-          "instagram": {
-            "type": "string",
-            "nullable": true
-          },
-          "tikTok": {
-            "type": "string",
-            "nullable": true
-          },
-          "logoFB": {
-            "type": "string",
-            "nullable": true
-          },
-          "logoInstagram": {
-            "type": "string",
-            "nullable": true
-          },
-          "logoTikTok": {
-            "type": "string",
-            "nullable": true
-          },
-          "urlFb": {
-            "type": "string",
-            "nullable": true
-          },
-          "urlTikTok": {
-            "type": "string",
-            "nullable": true
-          },
-          "urlInstagram": {
-            "type": "string",
-            "nullable": true
+          "trangThai": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -2409,6 +2382,9 @@
           "logo": {
             "type": "string",
             "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -2440,6 +2416,9 @@
             "type": "number",
             "format": "double",
             "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
           },
           "phongs": {
             "type": "array",
@@ -2509,6 +2488,9 @@
             "type": "integer",
             "format": "int32"
           },
+          "trangThai": {
+            "type": "boolean"
+          },
           "gia": {
             "type": "number",
             "format": "double"
@@ -2533,6 +2515,9 @@
           "noiDung": {
             "type": "string",
             "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -2577,6 +2562,9 @@
           "noiDungChiTiet": {
             "type": "string",
             "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -2595,6 +2583,9 @@
           "noiDung": {
             "type": "string",
             "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false

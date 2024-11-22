@@ -7,6 +7,7 @@ wwwroot\img\about\about-2.jpg
 wwwroot\img\about\about-3.jpg
 wwwroot\img\amenities-bg.jpg
 wwwroot\img\apple-favicon.png
+wwwroot\img\bathtub-hover.png
 wwwroot\img\favicon.ico
 wwwroot\img\icon\air-conditioner.png
 wwwroot\img\icon\air-conditioner.svg
@@ -17,12 +18,16 @@ wwwroot\img\icon\bathtub-hover.png
 wwwroot\img\icon\call.png
 wwwroot\img\icon\call.svg
 wwwroot\img\icon\call-hover.png
+wwwroot\img\icon\fb.png
+wwwroot\img\icon\GG.png
+wwwroot\img\icon\INTG.png
 wwwroot\img\icon\kitchen.png
 wwwroot\img\icon\kitchen.svg
 wwwroot\img\icon\kitchen-hover.png
 wwwroot\img\icon\minibar.png
 wwwroot\img\icon\minibar.svg
 wwwroot\img\icon\minibar-hover.png
+wwwroot\img\icon\Screenshot 2023-10-02 170956.png
 wwwroot\img\icon\shield.png
 wwwroot\img\icon\shield.svg
 wwwroot\img\icon\shield-hover.png
@@ -32,6 +37,7 @@ wwwroot\img\icon\shower-hover.png
 wwwroot\img\icon\television.png
 wwwroot\img\icon\television.svg
 wwwroot\img\icon\television-hover.png
+wwwroot\img\icon\Ticktok.png
 wwwroot\img\icon\towel.png
 wwwroot\img\icon\towel.svg
 wwwroot\img\icon\towel-hover.png
@@ -44,6 +50,8 @@ wwwroot\img\room\room-2.jpg
 wwwroot\img\room\room-3.jpg
 wwwroot\img\room\room-4.jpg
 wwwroot\img\room\room-5.jpg
+wwwroot\img\room-2.jpg
+wwwroot\img\room-5.jpg
 wwwroot\img\room-slider\room-1.jpg
 wwwroot\img\room-slider\room-2.jpg
 wwwroot\img\room-slider\room-3.jpg
@@ -115,6 +123,7 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\LienHesController.cs
 wwwroot\mail\contact.php
 wwwroot\vendor\animate\animate.css
 wwwroot\vendor\animate\animate.min.css

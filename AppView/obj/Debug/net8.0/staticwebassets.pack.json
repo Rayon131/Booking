@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\LienHesController.cs",
+      "PackagePath": "staticwebassets\\LienHesController.cs"
+    },
+    {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\css\\hover-style.css",
       "PackagePath": "staticwebassets\\css\\hover-style.css"
     },
@@ -37,8 +41,28 @@
       "PackagePath": "staticwebassets\\img\\apple-favicon.png"
     },
     {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\bathtub-hover.png",
+      "PackagePath": "staticwebassets\\img\\bathtub-hover.png"
+    },
+    {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\favicon.ico",
       "PackagePath": "staticwebassets\\img\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\GG.png",
+      "PackagePath": "staticwebassets\\img\\icon\\GG.png"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\INTG.png",
+      "PackagePath": "staticwebassets\\img\\icon\\INTG.png"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\Screenshot 2023-10-02 170956.png",
+      "PackagePath": "staticwebassets\\img\\icon\\Screenshot 2023-10-02 170956.png"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\Ticktok.png",
+      "PackagePath": "staticwebassets\\img\\icon\\Ticktok.png"
     },
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\air-conditioner-hover.png",
@@ -75,6 +99,10 @@
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\call.svg",
       "PackagePath": "staticwebassets\\img\\icon\\call.svg"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\fb.png",
+      "PackagePath": "staticwebassets\\img\\icon\\fb.png"
     },
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\kitchen-hover.png",
@@ -163,6 +191,14 @@
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\logo.jpg",
       "PackagePath": "staticwebassets\\img\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\room-2.jpg",
+      "PackagePath": "staticwebassets\\img\\room-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\room-5.jpg",
+      "PackagePath": "staticwebassets\\img\\room-5.jpg"
     },
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\room-slider\\room-1.jpg",

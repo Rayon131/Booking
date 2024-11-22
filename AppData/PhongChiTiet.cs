@@ -13,7 +13,9 @@ namespace AppData
 		public int ID { get; set; }
 		public string TenPhong { get; set; }
 		public int SoNguoi { get; set; }
+		public bool TrangThai { get; set; }
 		public decimal Gia { get; set; }
 		public LoaiPhong? LoaiPhong { get; set; }
+		
 	}
 }

@@ -36,6 +36,9 @@ namespace AppData.Migrations
                     b.Property<int?>("LoaiPhongMaLoaiPhong")
                         .HasColumnType("int");
 
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
 
                     b.HasIndex("LoaiPhongMaLoaiPhong");
@@ -127,9 +130,84 @@ namespace AppData.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
+
                     b.HasKey("ID");
 
                     b.ToTable("DichVus");
+                });
+
+            modelBuilder.Entity("AppData.FaceBook", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Hinh")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("faceBooks");
+                });
+
+            modelBuilder.Entity("AppData.GG", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Hinh")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("gGs");
+                });
+
+            modelBuilder.Entity("AppData.Inter", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Hinh")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("inters");
                 });
 
             modelBuilder.Entity("AppData.LienHe", b =>
@@ -140,38 +218,14 @@ namespace AppData.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
-                    b.Property<string>("FB")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Instagram")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LogoFB")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("LogoSDT")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LogoTikTok")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SoDienThoai")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("TikTok")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UrlFb")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UrlInstagram")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UrlTikTok")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("logoInstagram")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
 
                     b.HasKey("ID");
 
@@ -187,8 +241,10 @@ namespace AppData.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<string>("Logo")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
 
                     b.HasKey("ID");
 
@@ -220,6 +276,9 @@ namespace AppData.Migrations
                     b.Property<string>("TenLoaiPhong")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
 
                     b.HasKey("MaLoaiPhong");
 
@@ -276,6 +335,9 @@ namespace AppData.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
+
                     b.HasKey("ID");
 
                     b.HasIndex("LoaiPhongMaLoaiPhong");
@@ -298,6 +360,9 @@ namespace AppData.Migrations
                     b.Property<string>("NoiDung")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
 
                     b.HasKey("ID");
 
@@ -325,6 +390,30 @@ namespace AppData.Migrations
                     b.ToTable("TaiKhoans");
                 });
 
+            modelBuilder.Entity("AppData.TikTok", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Hinh")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("tikTok");
+                });
+
             modelBuilder.Entity("AppData.TinTuc", b =>
                 {
                     b.Property<int>("ID")
@@ -347,6 +436,9 @@ namespace AppData.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
+
                     b.HasKey("ID");
 
                     b.ToTable("tinTucs");
@@ -363,6 +455,9 @@ namespace AppData.Migrations
                     b.Property<string>("NoiDung")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Wel")
                         .IsRequired()

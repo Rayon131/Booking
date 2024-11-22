@@ -15,6 +15,7 @@ namespace AppData
 		public string MoTa { get; set; }
 		public string Hinh { get; set; }
         public int? LoaiPhongId { get; set; }
+		public bool TrangThai { get; set; }
         public ICollection<LoaiPhong> LoaiPhongs { get; set; } = new List<LoaiPhong>();
     }
 }

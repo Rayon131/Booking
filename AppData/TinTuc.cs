@@ -13,6 +13,7 @@ namespace AppData
         public string HinhAnh {  get; set; }
         public string? NoiDungNgan { get; set; }
         public string? NoiDungChiTiet {  get; set; }
+        public bool TrangThai { get; set; }
 
     }
 }
