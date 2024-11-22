@@ -264,3 +264,4 @@ C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppView\bin\Debug\net8.0\runtimes\win\
 C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppView\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppView\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppView\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppView\obj\Debug\net8.0\AppView.sourcelink.json

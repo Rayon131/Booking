@@ -12,3 +12,4 @@ C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\obj\Debug\net8.0\refint\AppDat
 C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\obj\Debug\net8.0\AppData.pdb
 C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\obj\Debug\net8.0\AppData.genruntimeconfig.cache
 C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\obj\Debug\net8.0\ref\AppData.dll
+C:\Users\dattb\OneDrive\Desktop\BOOKING01\AppData\obj\Debug\net8.0\AppData.sourcelink.json

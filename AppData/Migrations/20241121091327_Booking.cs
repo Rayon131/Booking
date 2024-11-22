@@ -12,21 +12,6 @@ namespace AppData.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "DichVus",
-                columns: table => new
-                {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Ten = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MoTa = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Hinh = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_DichVus", x => x.ID);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "lienHes",
                 columns: table => new
                 {
@@ -86,7 +71,9 @@ namespace AppData.Migrations
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Item = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Url = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Url = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    TenController = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    TrangThai = table.Column<bool>(type: "bit", nullable: false),
                     OrderIndex = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -158,7 +145,7 @@ namespace AppData.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Anh = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Anh = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     LoaiPhongMaLoaiPhong = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -169,6 +156,28 @@ namespace AppData.Migrations
                         column: x => x.LoaiPhongMaLoaiPhong,
                         principalTable: "LoaiPhongs",
                         principalColumn: "MaLoaiPhong");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "DichVus",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Ten = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MoTa = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Hinh = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LoaiPhongId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_DichVus", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_DichVus_LoaiPhongs_LoaiPhongId",
+                        column: x => x.LoaiPhongId,
+                        principalTable: "LoaiPhongs",
+                        principalColumn: "MaLoaiPhong",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -232,6 +241,11 @@ namespace AppData.Migrations
                 name: "IX_DatPhongs_PhongChiTietID",
                 table: "DatPhongs",
                 column: "PhongChiTietID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_DichVus_LoaiPhongId",
+                table: "DichVus",
+                column: "LoaiPhongId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_PhongChiTiets_LoaiPhongMaLoaiPhong",

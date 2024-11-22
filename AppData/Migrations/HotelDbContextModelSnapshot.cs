@@ -129,8 +129,6 @@ namespace AppData.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("LoaiPhongId");
-
                     b.ToTable("DichVus");
                 });
 
@@ -375,6 +373,21 @@ namespace AppData.Migrations
                     b.ToTable("welComes");
                 });
 
+            modelBuilder.Entity("DichVuLoaiPhong", b =>
+                {
+                    b.Property<int>("DichVusID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("LoaiPhongsMaLoaiPhong")
+                        .HasColumnType("int");
+
+                    b.HasKey("DichVusID", "LoaiPhongsMaLoaiPhong");
+
+                    b.HasIndex("LoaiPhongsMaLoaiPhong");
+
+                    b.ToTable("LoaiPhongDichVu", (string)null);
+                });
+
             modelBuilder.Entity("AppData.AnhChiTiet", b =>
                 {
                     b.HasOne("AppData.LoaiPhong", "LoaiPhong")
@@ -393,16 +406,6 @@ namespace AppData.Migrations
                     b.Navigation("PhongChiTiet");
                 });
 
-            modelBuilder.Entity("AppData.DichVu", b =>
-                {
-                    b.HasOne("AppData.LoaiPhong", "LoaiPhong")
-                        .WithMany("DichVus")
-                        .HasForeignKey("LoaiPhongId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.Navigation("LoaiPhong");
-                });
-
             modelBuilder.Entity("AppData.PhongChiTiet", b =>
                 {
                     b.HasOne("AppData.LoaiPhong", "LoaiPhong")
@@ -412,10 +415,23 @@ namespace AppData.Migrations
                     b.Navigation("LoaiPhong");
                 });
 
+            modelBuilder.Entity("DichVuLoaiPhong", b =>
+                {
+                    b.HasOne("AppData.DichVu", null)
+                        .WithMany()
+                        .HasForeignKey("DichVusID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AppData.LoaiPhong", null)
+                        .WithMany()
+                        .HasForeignKey("LoaiPhongsMaLoaiPhong")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("AppData.LoaiPhong", b =>
                 {
-                    b.Navigation("DichVus");
-
                     b.Navigation("HinhAnhPhongs");
 
                     b.Navigation("phongs");

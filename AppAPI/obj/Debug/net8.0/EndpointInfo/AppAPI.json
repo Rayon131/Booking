@@ -2335,8 +2335,12 @@
             "format": "int32",
             "nullable": true
           },
-          "loaiPhong": {
-            "$ref": "#/components/schemas/LoaiPhong"
+          "loaiPhongs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LoaiPhong"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false

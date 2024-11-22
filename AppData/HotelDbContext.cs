@@ -32,16 +32,15 @@ namespace AppData
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<DichVu>()
-		   .HasOne(dv => dv.LoaiPhong)  // Một DichVu liên kết đến một LoaiPhong
-		   .WithMany(lp => lp.DichVus) // Một LoaiPhong có nhiều DichVu
-		   .HasForeignKey(dv => dv.LoaiPhongId) // Khóa ngoại
-		   .OnDelete(DeleteBehavior.Cascade);  // Khi xóa LoaiPhong, các DichVu liên quan cũng bị xóa
+            modelBuilder.Entity<LoaiPhong>()
+			 .HasMany(lp => lp.DichVus)
+			 .WithMany(dv => dv.LoaiPhongs)
+			 .UsingEntity(j => j.ToTable("LoaiPhongDichVu"));
         }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer("Data Source=NOONE\\MSSQLSERVER02;Initial Catalog=BOOKING1;Integrated Security=True;Trust Server Certificate=True");
+			optionsBuilder.UseSqlServer("Data Source=NOONE\\MSSQLSERVER02;Initial Catalog=BOOKING2;Integrated Security=True;Trust Server Certificate=True");
 		}
 
 	}

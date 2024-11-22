@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AppData.Migrations
 {
     [DbContext(typeof(HotelDbContext))]
-    [Migration("20241121015845_Booking01")]
-    partial class Booking01
+    [Migration("20241121091327_Booking")]
+    partial class Booking
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -119,6 +119,9 @@ namespace AppData.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("LoaiPhongId")
+                        .HasColumnType("int");
+
                     b.Property<string>("MoTa")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -128,6 +131,8 @@ namespace AppData.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
+
+                    b.HasIndex("LoaiPhongId");
 
                     b.ToTable("DichVus");
                 });
@@ -241,8 +246,13 @@ namespace AppData.Migrations
                     b.Property<int>("OrderIndex")
                         .HasColumnType("int");
 
+                    b.Property<string>("TenController")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Url")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
@@ -386,6 +396,16 @@ namespace AppData.Migrations
                     b.Navigation("PhongChiTiet");
                 });
 
+            modelBuilder.Entity("AppData.DichVu", b =>
+                {
+                    b.HasOne("AppData.LoaiPhong", "LoaiPhong")
+                        .WithMany("DichVus")
+                        .HasForeignKey("LoaiPhongId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("LoaiPhong");
+                });
+
             modelBuilder.Entity("AppData.PhongChiTiet", b =>
                 {
                     b.HasOne("AppData.LoaiPhong", "LoaiPhong")
@@ -397,6 +417,8 @@ namespace AppData.Migrations
 
             modelBuilder.Entity("AppData.LoaiPhong", b =>
                 {
+                    b.Navigation("DichVus");
+
                     b.Navigation("HinhAnhPhongs");
 
                     b.Navigation("phongs");
