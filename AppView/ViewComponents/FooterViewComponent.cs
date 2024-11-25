@@ -11,10 +11,11 @@ namespace AppView.ViewComponents
         public FooterViewComponent(HotelDbContext context) => db = context;
         public IViewComponentResult Invoke()
         {
-            var data = db.lienHes.Select(x => new LienHeVM
+            var data = db.faceBooks.Select(x => new FacebookVM
             {
-              
-               
+              Hinh = x.Hinh,
+              Link = x.Link,
+              TrangThai = x.TrangThai,
             });
             return View(data);
         }

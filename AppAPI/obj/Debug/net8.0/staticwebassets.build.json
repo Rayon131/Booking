@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+pOpy9SxgZFBKskV6DcIoYh+gTL0Xhpb9/gp0SlKql4=",
+  "Hash": "9TibzTjYOS32ml6vi12Z/4w4MuJoITT/e1UDrdtqaoQ=",
   "Source": "AppAPI",
   "BasePath": "_content/AppAPI",
   "Mode": "Default",
@@ -176,6 +176,27 @@
       "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\about\\about-3.jpg"
     },
     {
+      "Identity": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\air-conditioner.png",
+      "SourceId": "AppView",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\",
+      "BasePath": "_content/AppView",
+      "RelativePath": "img/air-conditioner#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cpkzfb00yg",
+      "Integrity": "kM6ASJ6Uzdx40ZY/L1PXf4+NTri8D/4XOZeK6pf/BtQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\air-conditioner.png"
+    },
+    {
       "Identity": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\amenities-bg.jpg",
       "SourceId": "AppView",
       "SourceType": "Project",
@@ -239,6 +260,27 @@
       "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\bathtub-hover.png"
     },
     {
+      "Identity": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\call.png",
+      "SourceId": "AppView",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\",
+      "BasePath": "_content/AppView",
+      "RelativePath": "img/call#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zf5h7ddpqf",
+      "Integrity": "Mf93AMt4mTu4bEoP4k9r0LNRdC2o6AGPmJTpVLDuWTE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\call.png"
+    },
+    {
       "Identity": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\favicon.ico",
       "SourceId": "AppView",
       "SourceType": "Project",
@@ -258,6 +300,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\fb.png",
+      "SourceId": "AppView",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\",
+      "BasePath": "_content/AppView",
+      "RelativePath": "img/fb#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rp7v20b0hg",
+      "Integrity": "zypQ3znavyNFIM8PYD+Ylw+KoU7wGBQzwdGlQzmmpTs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\fb.png"
+    },
+    {
+      "Identity": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\GG.png",
+      "SourceId": "AppView",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\",
+      "BasePath": "_content/AppView",
+      "RelativePath": "img/GG#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ennvlhxywr",
+      "Integrity": "ejJXPRybWD8v9KlNBpqj5fzMw+SZ89ZjAlo2TrxFGGc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\GG.png"
     },
     {
       "Identity": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\air-conditioner.png",
@@ -489,6 +573,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\GG.png"
+    },
+    {
+      "Identity": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\INT.jpg",
+      "SourceId": "AppView",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\",
+      "BasePath": "_content/AppView",
+      "RelativePath": "img/icon/INT#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pgposofy9y",
+      "Integrity": "6QIGqX+7JYAYZ5LWpsyuJxkUJsdvlMZO3OlogfEsTtE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\INT.jpg"
     },
     {
       "Identity": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\INTG.png",
@@ -1016,6 +1121,27 @@
       "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\logo.jpg"
     },
     {
+      "Identity": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\Remove-bg.ai_1732501085934.png",
+      "SourceId": "AppView",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\",
+      "BasePath": "_content/AppView",
+      "RelativePath": "img/Remove-bg.ai_1732501085934#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m3lc8buf4q",
+      "Integrity": "LlbPRyXW1SSVXdOLfGf52o6YTREV0cgzjYtWT8b09VM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\Remove-bg.ai_1732501085934.png"
+    },
+    {
       "Identity": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\room\\room-1.jpg",
       "SourceId": "AppView",
       "SourceType": "Project",
@@ -1350,6 +1476,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\slider\\header-slider-3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\Ticktok.png",
+      "SourceId": "AppView",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\",
+      "BasePath": "_content/AppView",
+      "RelativePath": "img/Ticktok#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "quxjhpy713",
+      "Integrity": "3jgjMOfPceaNzrKd/4WoYcfY+Fi3N5/icdXTnqB35fE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\Ticktok.png"
     },
     {
       "Identity": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\js\\booking.js",
@@ -4196,6 +4343,88 @@
       ]
     },
     {
+      "Route": "_content/AppView/img/air-conditioner.cpkzfb00yg.png",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\air-conditioner.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2460"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kM6ASJ6Uzdx40ZY/L1PXf4+NTri8D/4XOZeK6pf/BtQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 02:09:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cpkzfb00yg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kM6ASJ6Uzdx40ZY/L1PXf4+NTri8D/4XOZeK6pf/BtQ="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/AppView/img/air-conditioner.png"
+        }
+      ]
+    },
+    {
+      "Route": "_content/AppView/img/air-conditioner.png",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\air-conditioner.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2460"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kM6ASJ6Uzdx40ZY/L1PXf4+NTri8D/4XOZeK6pf/BtQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 02:09:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kM6ASJ6Uzdx40ZY/L1PXf4+NTri8D/4XOZeK6pf/BtQ="
+        }
+      ]
+    },
+    {
       "Route": "_content/AppView/img/amenities-bg.a69xf6twxt.jpg",
       "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\amenities-bg.jpg",
       "Selectors": [],
@@ -4386,7 +4615,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 08:19:01 GMT"
+          "Value": "Mon, 25 Nov 2024 02:59:46 GMT"
         }
       ],
       "EndpointProperties": [
@@ -4423,7 +4652,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 08:19:01 GMT"
+          "Value": "Mon, 25 Nov 2024 02:59:46 GMT"
         }
       ],
       "EndpointProperties": [
@@ -4438,6 +4667,88 @@
         {
           "Name": "label",
           "Value": "_content/AppView/img/bathtub-hover.png"
+        }
+      ]
+    },
+    {
+      "Route": "_content/AppView/img/call.png",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\call.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3264"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mf93AMt4mTu4bEoP4k9r0LNRdC2o6AGPmJTpVLDuWTE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 03:01:52 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mf93AMt4mTu4bEoP4k9r0LNRdC2o6AGPmJTpVLDuWTE="
+        }
+      ]
+    },
+    {
+      "Route": "_content/AppView/img/call.zf5h7ddpqf.png",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\call.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3264"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mf93AMt4mTu4bEoP4k9r0LNRdC2o6AGPmJTpVLDuWTE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 03:01:52 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zf5h7ddpqf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mf93AMt4mTu4bEoP4k9r0LNRdC2o6AGPmJTpVLDuWTE="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/AppView/img/call.png"
         }
       ]
     },
@@ -4524,6 +4835,170 @@
       ]
     },
     {
+      "Route": "_content/AppView/img/fb.png",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\fb.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5974"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zypQ3znavyNFIM8PYD+Ylw+KoU7wGBQzwdGlQzmmpTs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 02:59:56 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zypQ3znavyNFIM8PYD+Ylw+KoU7wGBQzwdGlQzmmpTs="
+        }
+      ]
+    },
+    {
+      "Route": "_content/AppView/img/fb.rp7v20b0hg.png",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\fb.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5974"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zypQ3znavyNFIM8PYD+Ylw+KoU7wGBQzwdGlQzmmpTs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 02:59:56 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rp7v20b0hg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zypQ3znavyNFIM8PYD+Ylw+KoU7wGBQzwdGlQzmmpTs="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/AppView/img/fb.png"
+        }
+      ]
+    },
+    {
+      "Route": "_content/AppView/img/GG.ennvlhxywr.png",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\GG.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "213112"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ejJXPRybWD8v9KlNBpqj5fzMw+SZ89ZjAlo2TrxFGGc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 02:59:07 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ennvlhxywr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ejJXPRybWD8v9KlNBpqj5fzMw+SZ89ZjAlo2TrxFGGc="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/AppView/img/GG.png"
+        }
+      ]
+    },
+    {
+      "Route": "_content/AppView/img/GG.png",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\GG.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "213112"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ejJXPRybWD8v9KlNBpqj5fzMw+SZ89ZjAlo2TrxFGGc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 02:59:07 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ejJXPRybWD8v9KlNBpqj5fzMw+SZ89ZjAlo2TrxFGGc="
+        }
+      ]
+    },
+    {
       "Route": "_content/AppView/img/icon/air-conditioner.ce8cwxo723.svg",
       "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\air-conditioner.svg",
       "Selectors": [],
@@ -4595,7 +5070,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 06 Apr 2019 05:06:54 GMT"
+          "Value": "Mon, 25 Nov 2024 02:12:25 GMT"
         }
       ],
       "EndpointProperties": [
@@ -4640,7 +5115,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 06 Apr 2019 05:06:54 GMT"
+          "Value": "Mon, 25 Nov 2024 02:12:25 GMT"
         }
       ],
       "EndpointProperties": [
@@ -5288,7 +5763,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 02:26:26 GMT"
+          "Value": "Mon, 25 Nov 2024 02:20:00 GMT"
         }
       ],
       "EndpointProperties": [
@@ -5325,7 +5800,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 02:26:26 GMT"
+          "Value": "Mon, 25 Nov 2024 02:20:00 GMT"
         }
       ],
       "EndpointProperties": [
@@ -5370,7 +5845,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 02:29:33 GMT"
+          "Value": "Mon, 25 Nov 2024 02:57:12 GMT"
         }
       ],
       "EndpointProperties": [
@@ -5415,13 +5890,95 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 02:29:33 GMT"
+          "Value": "Mon, 25 Nov 2024 02:57:12 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
           "Value": "sha256-ejJXPRybWD8v9KlNBpqj5fzMw+SZ89ZjAlo2TrxFGGc="
+        }
+      ]
+    },
+    {
+      "Route": "_content/AppView/img/icon/INT.jpg",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\INT.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8609"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6QIGqX+7JYAYZ5LWpsyuJxkUJsdvlMZO3OlogfEsTtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 02:52:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6QIGqX+7JYAYZ5LWpsyuJxkUJsdvlMZO3OlogfEsTtE="
+        }
+      ]
+    },
+    {
+      "Route": "_content/AppView/img/icon/INT.pgposofy9y.jpg",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\INT.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8609"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6QIGqX+7JYAYZ5LWpsyuJxkUJsdvlMZO3OlogfEsTtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 02:52:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pgposofy9y"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6QIGqX+7JYAYZ5LWpsyuJxkUJsdvlMZO3OlogfEsTtE="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/AppView/img/icon/INT.jpg"
         }
       ]
     },
@@ -6846,7 +7403,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 02:31:35 GMT"
+          "Value": "Mon, 25 Nov 2024 02:59:38 GMT"
         }
       ],
       "EndpointProperties": [
@@ -6883,7 +7440,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 02:31:35 GMT"
+          "Value": "Mon, 25 Nov 2024 02:59:38 GMT"
         }
       ],
       "EndpointProperties": [
@@ -7476,6 +8033,88 @@
       ]
     },
     {
+      "Route": "_content/AppView/img/Remove-bg.ai_1732501085934.m3lc8buf4q.png",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\Remove-bg.ai_1732501085934.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32047"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LlbPRyXW1SSVXdOLfGf52o6YTREV0cgzjYtWT8b09VM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 03:04:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m3lc8buf4q"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LlbPRyXW1SSVXdOLfGf52o6YTREV0cgzjYtWT8b09VM="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/AppView/img/Remove-bg.ai_1732501085934.png"
+        }
+      ]
+    },
+    {
+      "Route": "_content/AppView/img/Remove-bg.ai_1732501085934.png",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\Remove-bg.ai_1732501085934.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32047"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LlbPRyXW1SSVXdOLfGf52o6YTREV0cgzjYtWT8b09VM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 03:04:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LlbPRyXW1SSVXdOLfGf52o6YTREV0cgzjYtWT8b09VM="
+        }
+      ]
+    },
+    {
       "Route": "_content/AppView/img/room/room-1.jpg",
       "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\room\\room-1.jpg",
       "Selectors": [],
@@ -7912,7 +8551,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 08:32:01 GMT"
+          "Value": "Fri, 22 Nov 2024 08:55:41 GMT"
         }
       ],
       "EndpointProperties": [
@@ -7949,7 +8588,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 08:32:01 GMT"
+          "Value": "Fri, 22 Nov 2024 08:55:41 GMT"
         }
       ],
       "EndpointProperties": [
@@ -7994,7 +8633,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 08:52:28 GMT"
+          "Value": "Fri, 22 Nov 2024 08:55:49 GMT"
         }
       ],
       "EndpointProperties": [
@@ -8039,7 +8678,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 08:52:28 GMT"
+          "Value": "Fri, 22 Nov 2024 08:55:49 GMT"
         }
       ],
       "EndpointProperties": [
@@ -8784,6 +9423,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-AKTOhO8AVORtk/QGlOpS8rYY77xweOxH1/BQibUqknI="
+        }
+      ]
+    },
+    {
+      "Route": "_content/AppView/img/Ticktok.png",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\Ticktok.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10479"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3jgjMOfPceaNzrKd/4WoYcfY+Fi3N5/icdXTnqB35fE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 03:03:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3jgjMOfPceaNzrKd/4WoYcfY+Fi3N5/icdXTnqB35fE="
+        }
+      ]
+    },
+    {
+      "Route": "_content/AppView/img/Ticktok.quxjhpy713.png",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\Ticktok.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10479"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3jgjMOfPceaNzrKd/4WoYcfY+Fi3N5/icdXTnqB35fE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 03:03:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "quxjhpy713"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3jgjMOfPceaNzrKd/4WoYcfY+Fi3N5/icdXTnqB35fE="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/AppView/img/Ticktok.png"
         }
       ]
     },

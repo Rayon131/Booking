@@ -120,18 +120,7 @@ namespace AppView.Controllers
                 return RedirectToAction(nameof(Index));  // Điều hướng về trang danh sách
             }
 
-               /* catch (DbUpdateConcurrencyException)
-                {
-                    if (!LoGoExists(logo.ID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));*/
+              
             
             return View(logo);
         }

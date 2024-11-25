@@ -32,6 +32,12 @@
         <span asp-validation-for="LoaiPhongId" class="text-danger"></span>
     </div>
 
+    <div class="form-group form-check">
+        <label class="form-check-label">
+            <input class="form-check-input" asp-for="TrangThai" /> @Html.DisplayNameFor(model => model.TrangThai)
+        </label>
+    </div>
+
     <div class="form-group">
         <label>Current Image</label>
         @if (!string.IsNullOrEmpty(Model.Hinh))

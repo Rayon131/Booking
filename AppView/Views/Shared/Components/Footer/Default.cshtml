@@ -1,4 +1,13 @@
-﻿<a href=""><img src="img/icon/fb.png"></a>
-<a href=""><img src="img/icon/face.png"></a>
-<a href=""><img src="img/icon/face.png"></a>
-<a href=""><img src="img/icon/face.png"></a>
+﻿@model IEnumerable<AppView.ViewModels.FacebookVM>
+
+@foreach (var item in Model)
+{
+    @if (item.TrangThai)
+    {
+        <a href="@item.Link"><img src="~/img/@item.Hinh"></a>
+    }
+  
+}
+
+
+

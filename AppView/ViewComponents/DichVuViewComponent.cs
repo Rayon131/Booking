@@ -16,6 +16,7 @@ namespace AppView.ViewComponents
                 Ten = x.Ten,
                 MoTa = x.MoTa,
                 Hinh = x.Hinh,
+                TrangThai = x.TrangThai,
             });
             return View(data);
         }

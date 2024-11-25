@@ -48,23 +48,35 @@ namespace AppView.Controllers
             return View();
         }
 
-        // POST: TikToks/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Hinh,Link,TrangThai")] TikTok tikTok)
+
+        public async Task<IActionResult> Create([Bind("Id,Link,Hinh,TrangThai")] TikTok gG, IFormFile imageFile)
         {
-            if (ModelState.IsValid)
+
+            if (!ModelState.IsValid)
             {
-                _context.Add(tikTok);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                if (imageFile != null && imageFile.Length > 0)
+                {
+                    // Lưu file vào thư mục trên server
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/icon", imageFile.FileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await imageFile.CopyToAsync(stream);
+                    }
+
+                    // Lưu đường dẫn file vào database
+                    gG.Hinh = imageFile.FileName;
+                }
+
+                _context.Add(gG);  // Thêm đối tượng DichVu vào CSDL
+                _context.SaveChanges();  // Lưu thay đổi vào CSDL
+                return RedirectToAction(nameof(Index));  // Điều hướng về trang danh sách
             }
-            return View(tikTok);
+
+            return View(gG);
         }
 
-        // GET: TikToks/Edit/5
+        // GET: FaceBooks/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -72,47 +84,45 @@ namespace AppView.Controllers
                 return NotFound();
             }
 
-            var tikTok = await _context.tikTok.FindAsync(id);
-            if (tikTok == null)
+            var gg = await _context.tikTok.FindAsync(id);
+            if (gg == null)
             {
                 return NotFound();
             }
-            return View(tikTok);
+            return View(gg);
         }
 
-        // POST: TikToks/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Hinh,Link,TrangThai")] TikTok tikTok)
+
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Hinh,Link,TrangThai")] TikTok gG, IFormFile imageFile)
         {
-            if (id != tikTok.Id)
+            if (id != gG.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+
+            if (!ModelState.IsValid)
             {
-                try
+                if (imageFile != null && imageFile.Length > 0)
                 {
-                    _context.Update(tikTok);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!TikTokExists(tikTok.Id))
+                    // Lưu file vào thư mục trên server
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", imageFile.FileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
                     {
-                        return NotFound();
+                        await imageFile.CopyToAsync(stream);
                     }
-                    else
-                    {
-                        throw;
-                    }
+
+                    // Lưu đường dẫn file vào database
+                    gG.Hinh = imageFile.FileName;
                 }
-                return RedirectToAction(nameof(Index));
+                _context.Update(gG);  // Thêm đối tượng DichVu vào CSDL
+                _context.SaveChanges();  // Lưu thay đổi vào CSDL
+                return RedirectToAction(nameof(Index));  // Điều hướng về trang danh sách
             }
-            return View(tikTok);
+
+            return View(gG);
         }
 
         // GET: TikToks/Delete/5

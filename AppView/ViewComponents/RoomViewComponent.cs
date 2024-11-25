@@ -24,11 +24,16 @@ namespace AppView.ViewComponents
                     Anh = lp.Anh,
                     GiaGoc = lp.GiaGoc,
                     GiaGiamGia = lp.GiaGiamGia,
+                    TrangThai = lp.TrangThai,
+                    
                     DichVus = lp.DichVus.Select(dv => new DichVuVM
                     {
                         Ten = dv.Ten,
                         MoTa = dv.MoTa,
-                        Hinh = dv.Hinh
+                        Hinh = dv.Hinh,
+                        TrangThai = dv.TrangThai,
+
+                        
                     }).ToList()
                 }).ToList();
 

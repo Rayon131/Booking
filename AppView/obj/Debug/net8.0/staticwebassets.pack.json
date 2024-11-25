@@ -21,6 +21,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\GG.png",
+      "PackagePath": "staticwebassets\\img\\GG.png"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\Remove-bg.ai_1732501085934.png",
+      "PackagePath": "staticwebassets\\img\\Remove-bg.ai_1732501085934.png"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\Ticktok.png",
+      "PackagePath": "staticwebassets\\img\\Ticktok.png"
+    },
+    {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\about\\about-1.jpg",
       "PackagePath": "staticwebassets\\img\\about\\about-1.jpg"
     },
@@ -31,6 +43,10 @@
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\about\\about-3.jpg",
       "PackagePath": "staticwebassets\\img\\about\\about-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\air-conditioner.png",
+      "PackagePath": "staticwebassets\\img\\air-conditioner.png"
     },
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\amenities-bg.jpg",
@@ -45,12 +61,24 @@
       "PackagePath": "staticwebassets\\img\\bathtub-hover.png"
     },
     {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\call.png",
+      "PackagePath": "staticwebassets\\img\\call.png"
+    },
+    {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\favicon.ico",
       "PackagePath": "staticwebassets\\img\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\fb.png",
+      "PackagePath": "staticwebassets\\img\\fb.png"
+    },
+    {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\GG.png",
       "PackagePath": "staticwebassets\\img\\icon\\GG.png"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\INT.jpg",
+      "PackagePath": "staticwebassets\\img\\icon\\INT.jpg"
     },
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\INTG.png",

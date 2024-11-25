@@ -10,6 +10,7 @@ namespace AppView.ViewModels
         public string Anh { get; set; }
         public decimal GiaGoc { get; set; }
         public decimal? GiaGiamGia { get; set; }
+        public bool TrangThai { get; set; }
         public List<DichVuVM> DichVus { get; set; } = new List<DichVuVM>();
     }
 }

@@ -49,15 +49,29 @@ namespace AppView.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Hinh,Link,TrangThai")] FaceBook faceBook)
+        public async Task<IActionResult> Create([Bind("Id,Link,Hinh,TrangThai")] FaceBook faceBook, IFormFile imageFile)
         {
-            if (ModelState.IsValid)
+
+            if (!ModelState.IsValid)
             {
-                _context.Add(faceBook);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                if (imageFile != null && imageFile.Length > 0)
+                {
+                    // Lưu file vào thư mục trên server
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/icon", imageFile.FileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await imageFile.CopyToAsync(stream);
+                    }
+
+                    // Lưu đường dẫn file vào database
+                    faceBook.Hinh = imageFile.FileName;
+                }
+
+                _context.Add(faceBook);  // Thêm đối tượng DichVu vào CSDL
+                _context.SaveChanges();  // Lưu thay đổi vào CSDL
+                return RedirectToAction(nameof(Index));  // Điều hướng về trang danh sách
             }
+
             return View(faceBook);
         }
 
@@ -80,33 +94,33 @@ namespace AppView.Controllers
         
         [HttpPost]
      
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Hinh,Link,TrangThai")] FaceBook faceBook)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Hinh,Link,TrangThai")] FaceBook faceBook , IFormFile imageFile)
         {
             if (id != faceBook.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+
+            if (!ModelState.IsValid)
             {
-                try
+                if (imageFile != null && imageFile.Length > 0)
                 {
-                    _context.Update(faceBook);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!FaceBookExists(faceBook.Id))
+                    // Lưu file vào thư mục trên server
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", imageFile.FileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
                     {
-                        return NotFound();
+                        await imageFile.CopyToAsync(stream);
                     }
-                    else
-                    {
-                        throw;
-                    }
+
+                    // Lưu đường dẫn file vào database
+                    faceBook.Hinh = imageFile.FileName;
                 }
-                return RedirectToAction(nameof(Index));
+                _context.Update(faceBook);  // Thêm đối tượng DichVu vào CSDL
+                _context.SaveChanges();  // Lưu thay đổi vào CSDL
+                return RedirectToAction(nameof(Index));  // Điều hướng về trang danh sách
             }
+
             return View(faceBook);
         }
 

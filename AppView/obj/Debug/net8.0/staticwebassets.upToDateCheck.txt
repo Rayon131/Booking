@@ -5,10 +5,14 @@ wwwroot\favicon.ico
 wwwroot\img\about\about-1.jpg
 wwwroot\img\about\about-2.jpg
 wwwroot\img\about\about-3.jpg
+wwwroot\img\air-conditioner.png
 wwwroot\img\amenities-bg.jpg
 wwwroot\img\apple-favicon.png
 wwwroot\img\bathtub-hover.png
+wwwroot\img\call.png
 wwwroot\img\favicon.ico
+wwwroot\img\fb.png
+wwwroot\img\GG.png
 wwwroot\img\icon\air-conditioner.png
 wwwroot\img\icon\air-conditioner.svg
 wwwroot\img\icon\air-conditioner-hover.png
@@ -20,6 +24,7 @@ wwwroot\img\icon\call.svg
 wwwroot\img\icon\call-hover.png
 wwwroot\img\icon\fb.png
 wwwroot\img\icon\GG.png
+wwwroot\img\icon\INT.jpg
 wwwroot\img\icon\INTG.png
 wwwroot\img\icon\kitchen.png
 wwwroot\img\icon\kitchen.svg
@@ -45,6 +50,7 @@ wwwroot\img\icon\wifi.png
 wwwroot\img\icon\wifi-connection-signal-symbol.svg
 wwwroot\img\icon\wifi-hover.png
 wwwroot\img\logo.jpg
+wwwroot\img\Remove-bg.ai_1732501085934.png
 wwwroot\img\room\room-1.jpg
 wwwroot\img\room\room-2.jpg
 wwwroot\img\room\room-3.jpg
@@ -61,6 +67,7 @@ wwwroot\img\room-slider\room-6.jpg
 wwwroot\img\slider\header-slider-1.jpg
 wwwroot\img\slider\header-slider-2.jpg
 wwwroot\img\slider\header-slider-3.jpg
+wwwroot\img\Ticktok.png
 wwwroot\js\booking.js
 wwwroot\js\contact.js
 wwwroot\js\jqBootstrapValidation.min.js
