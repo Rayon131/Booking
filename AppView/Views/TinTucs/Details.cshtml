@@ -1,4 +1,4 @@
-﻿@model AppData.MenuItem
+﻿@model AppData.TinTuc
 
 @{
     ViewData["Title"] = "Details";
@@ -7,38 +7,38 @@
 <h1>Details</h1>
 
 <div>
-    <h4>MenuItem</h4>
+    <h4>TinTuc</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Item)
+            @Html.DisplayNameFor(model => model.TenTinTuc)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Item)
+            @Html.DisplayFor(model => model.TenTinTuc)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Url)
+            @Html.DisplayNameFor(model => model.HinhAnh)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Url)
+            @Html.DisplayFor(model => model.HinhAnh)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TenController)
+            @Html.DisplayNameFor(model => model.NoiDungNgan)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TenController)
+            @Html.DisplayFor(model => model.NoiDungNgan)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NoiDungChiTiet)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NoiDungChiTiet)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.TrangThai)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.TrangThai)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.OrderIndex)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.OrderIndex)
         </dd>
     </dl>
 </div>

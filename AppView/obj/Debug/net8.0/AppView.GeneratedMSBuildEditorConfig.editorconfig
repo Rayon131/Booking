@@ -36,10 +36,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljaFZ1c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/DichVus/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljaFZ1c1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/DichVus/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljaFZ1c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,10 +52,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjZUJvb2tzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/FaceBooks/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjZUJvb2tzXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/FaceBooks/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjZUJvb2tzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -74,10 +66,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/GGs/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0dzXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/GGs/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0dzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/GGs/Edit.cshtml]
@@ -100,10 +88,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/Inters/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJzXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/Inters/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -112,16 +96,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/LoaiPhongs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVBob25nc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/LoaiPhongs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVBob25nc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/LoaiPhongs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVBob25nc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/LoaiPhongs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVBob25nc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/LoGoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9Hb2VzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/LoGoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9Hb2VzXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/LoGoes/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9Hb2VzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/LoGoes/Edit.cshtml]
@@ -138,10 +134,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/MenuItems/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUl0ZW1zXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/MenuItems/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUl0ZW1zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/MenuItems/Edit.cshtml]
@@ -180,6 +172,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/Shared/Components/Rooms/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUm9vbXNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/Shared/Components/Room/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUm9vbVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -200,6 +196,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/Slides/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xpZGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/Slides/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xpZGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/Slides/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xpZGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/Slides/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xpZGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/TikToks/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlrVG9rc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -208,16 +220,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlrVG9rc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/TikToks/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlrVG9rc1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/TikToks/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlrVG9rc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/TikToks/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlrVG9rc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/TinTucs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGluVHVjc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/TinTucs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGluVHVjc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/TinTucs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGluVHVjc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/TinTucs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGluVHVjc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/TinTucs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGluVHVjc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dattb/OneDrive/Desktop/BOOKING01/AppView/Views/_ViewImports.cshtml]

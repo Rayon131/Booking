@@ -45,6 +45,22 @@
       "PackagePath": "staticwebassets\\img\\about\\about-3.jpg"
     },
     {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\about\\bathtub-hover.png",
+      "PackagePath": "staticwebassets\\img\\about\\bathtub-hover.png"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\about\\bathtub.png",
+      "PackagePath": "staticwebassets\\img\\about\\bathtub.png"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\about\\bathtub.svg",
+      "PackagePath": "staticwebassets\\img\\about\\bathtub.svg"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\about\\call.png",
+      "PackagePath": "staticwebassets\\img\\about\\call.png"
+    },
+    {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\air-conditioner.png",
       "PackagePath": "staticwebassets\\img\\air-conditioner.png"
     },
@@ -71,6 +87,10 @@
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\fb.png",
       "PackagePath": "staticwebassets\\img\\fb.png"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\header-slider-2.jpg",
+      "PackagePath": "staticwebassets\\img\\header-slider-2.jpg"
     },
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\wwwroot\\img\\icon\\GG.png",

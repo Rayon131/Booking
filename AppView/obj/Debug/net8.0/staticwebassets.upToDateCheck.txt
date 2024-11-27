@@ -5,6 +5,10 @@ wwwroot\favicon.ico
 wwwroot\img\about\about-1.jpg
 wwwroot\img\about\about-2.jpg
 wwwroot\img\about\about-3.jpg
+wwwroot\img\about\bathtub.png
+wwwroot\img\about\bathtub.svg
+wwwroot\img\about\bathtub-hover.png
+wwwroot\img\about\call.png
 wwwroot\img\air-conditioner.png
 wwwroot\img\amenities-bg.jpg
 wwwroot\img\apple-favicon.png
@@ -13,6 +17,7 @@ wwwroot\img\call.png
 wwwroot\img\favicon.ico
 wwwroot\img\fb.png
 wwwroot\img\GG.png
+wwwroot\img\header-slider-2.jpg
 wwwroot\img\icon\air-conditioner.png
 wwwroot\img\icon\air-conditioner.svg
 wwwroot\img\icon\air-conditioner-hover.png
