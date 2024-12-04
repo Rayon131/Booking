@@ -987,6 +987,10 @@ h6 {
     margin: 30px auto;
     text-align: center;
 }
+.box12 img {
+    width: 150%;
+    height: auto;
+}
 
 .modal .modal-header button {
     margin: 0 auto;

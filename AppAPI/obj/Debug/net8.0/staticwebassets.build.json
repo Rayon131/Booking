@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7axvpvRDy53Tce7jf+9a24wCtvBFai0E8BnGw6O78+c=",
+  "Hash": "ZHfwWk2Ujco9xgqfxXMeD/n2KcEjaahkhugAi+r/t78=",
   "Source": "AppAPI",
   "BasePath": "_content/AppAPI",
   "Mode": "Default",
@@ -43,8 +43,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "sx17mkx8c7",
-      "Integrity": "cESnwiafhL+aa0ijTCoE14A8uhLHGs5KsCO6gQGzJgE=",
+      "Fingerprint": "semfa8rs1u",
+      "Integrity": "NDmvIH38uZseCWL8qzaYO/atwFY+r681+HdZiF/Y1A8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\css\\hover-style.css"
@@ -85,8 +85,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "42h0524qed",
-      "Integrity": "XIMG9d3JzD4MjX0JJIlSdQDjLCgRXj+DUPjQSTQRnRM=",
+      "Fingerprint": "02l575d9c7",
+      "Integrity": "2KQoRIVUWswwCOWi2F7BAER1fR2KmmAORUtaJwqtKMs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\css\\style.css"
@@ -3959,22 +3959,22 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cESnwiafhL+aa0ijTCoE14A8uhLHGs5KsCO6gQGzJgE=\""
+          "Value": "\"NDmvIH38uZseCWL8qzaYO/atwFY+r681+HdZiF/Y1A8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Dec 2024 07:38:35 GMT"
+          "Value": "Wed, 04 Dec 2024 01:55:32 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cESnwiafhL+aa0ijTCoE14A8uhLHGs5KsCO6gQGzJgE="
+          "Value": "sha256-NDmvIH38uZseCWL8qzaYO/atwFY+r681+HdZiF/Y1A8="
         }
       ]
     },
     {
-      "Route": "_content/AppView/css/hover-style.sx17mkx8c7.css",
+      "Route": "_content/AppView/css/hover-style.semfa8rs1u.css",
       "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\css\\hover-style.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3996,21 +3996,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cESnwiafhL+aa0ijTCoE14A8uhLHGs5KsCO6gQGzJgE=\""
+          "Value": "\"NDmvIH38uZseCWL8qzaYO/atwFY+r681+HdZiF/Y1A8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Dec 2024 07:38:35 GMT"
+          "Value": "Wed, 04 Dec 2024 01:55:32 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sx17mkx8c7"
+          "Value": "semfa8rs1u"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-cESnwiafhL+aa0ijTCoE14A8uhLHGs5KsCO6gQGzJgE="
+          "Value": "sha256-NDmvIH38uZseCWL8qzaYO/atwFY+r681+HdZiF/Y1A8="
         },
         {
           "Name": "label",
@@ -4101,7 +4101,7 @@
       ]
     },
     {
-      "Route": "_content/AppView/css/style.42h0524qed.css",
+      "Route": "_content/AppView/css/style.02l575d9c7.css",
       "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\css\\style.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4115,7 +4115,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "31583"
+          "Value": "31637"
         },
         {
           "Name": "Content-Type",
@@ -4123,21 +4123,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"XIMG9d3JzD4MjX0JJIlSdQDjLCgRXj+DUPjQSTQRnRM=\""
+          "Value": "\"2KQoRIVUWswwCOWi2F7BAER1fR2KmmAORUtaJwqtKMs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Dec 2024 07:38:35 GMT"
+          "Value": "Wed, 04 Dec 2024 01:56:08 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "42h0524qed"
+          "Value": "02l575d9c7"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-XIMG9d3JzD4MjX0JJIlSdQDjLCgRXj+DUPjQSTQRnRM="
+          "Value": "sha256-2KQoRIVUWswwCOWi2F7BAER1fR2KmmAORUtaJwqtKMs="
         },
         {
           "Name": "label",
@@ -4160,7 +4160,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "31583"
+          "Value": "31637"
         },
         {
           "Name": "Content-Type",
@@ -4168,17 +4168,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"XIMG9d3JzD4MjX0JJIlSdQDjLCgRXj+DUPjQSTQRnRM=\""
+          "Value": "\"2KQoRIVUWswwCOWi2F7BAER1fR2KmmAORUtaJwqtKMs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Dec 2024 07:38:35 GMT"
+          "Value": "Wed, 04 Dec 2024 01:56:08 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-XIMG9d3JzD4MjX0JJIlSdQDjLCgRXj+DUPjQSTQRnRM="
+          "Value": "sha256-2KQoRIVUWswwCOWi2F7BAER1fR2KmmAORUtaJwqtKMs="
         }
       ]
     },
