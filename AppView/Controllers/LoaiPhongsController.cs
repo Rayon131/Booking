@@ -43,24 +43,36 @@ namespace AppView.Controllers
         }
 
         // GET: LoaiPhongs/Create
-        public IActionResult Create()
+         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: LoaiPhongs/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("MaLoaiPhong,TenLoaiPhong,MoTa,Anh,GiaGoc,GiaGiamGia,TrangThai")] LoaiPhong loaiPhong)
+        public async Task<IActionResult> Create([Bind("MaLoaiPhong,TenLoaiPhong,MoTa,Anh,GiaGoc,GiaGiamGia,TrangThai")] LoaiPhong loaiPhong, IFormFile imageFile)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _context.Add(loaiPhong);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                if (imageFile != null && imageFile.Length > 0)
+                {
+                    // Lưu file vào thư mục trên server
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/room", imageFile.FileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await imageFile.CopyToAsync(stream);
+                    }
+
+                    // Lưu đường dẫn file vào database
+                    loaiPhong.Anh = imageFile.FileName;
+                }
+
+                _context.Add(loaiPhong);  // Thêm đối tượng DichVu vào CSDL
+                _context.SaveChanges();  // Lưu thay đổi vào CSDL
+                return RedirectToAction(nameof(Index));  // Điều hướng về trang danh sách
             }
+
             return View(loaiPhong);
         }
 
@@ -85,33 +97,33 @@ namespace AppView.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("MaLoaiPhong,TenLoaiPhong,MoTa,Anh,GiaGoc,GiaGiamGia,TrangThai")] LoaiPhong loaiPhong)
+        public async Task<IActionResult> Edit(int id, [Bind("MaLoaiPhong,TenLoaiPhong,MoTa,Anh,GiaGoc,GiaGiamGia,TrangThai")] LoaiPhong loaiPhong, IFormFile imageFile)
         {
             if (id != loaiPhong.MaLoaiPhong)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                try
+                if (imageFile != null && imageFile.Length > 0)
                 {
-                    _context.Update(loaiPhong);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!LoaiPhongExists(loaiPhong.MaLoaiPhong))
+                    // Lưu file vào thư mục trên server
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/room", imageFile.FileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
                     {
-                        return NotFound();
+                        await imageFile.CopyToAsync(stream);
                     }
-                    else
-                    {
-                        throw;
-                    }
+
+                    // Lưu đường dẫn file vào database
+                    loaiPhong.Anh = imageFile.FileName;
                 }
-                return RedirectToAction(nameof(Index));
+
+                _context.Update(loaiPhong);  // Thêm đối tượng DichVu vào CSDL
+                _context.SaveChanges();  // Lưu thay đổi vào CSDL
+                return RedirectToAction(nameof(Index));  // Điều hướng về trang danh sách
             }
+
             return View(loaiPhong);
         }
 

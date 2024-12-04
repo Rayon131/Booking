@@ -2242,6 +2242,11 @@
           "trangThai": {
             "type": "boolean"
           },
+          "idLoaiPhong": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
           "loaiPhong": {
             "$ref": "#/components/schemas/LoaiPhong"
           }
@@ -2341,10 +2346,10 @@
           "trangThai": {
             "type": "boolean"
           },
-          "loaiPhongs": {
+          "dichVuLoaiPhongs": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/LoaiPhong"
+              "$ref": "#/components/schemas/LoaiPhongDichVu"
             },
             "nullable": true
           }
@@ -2434,12 +2439,36 @@
             },
             "nullable": true
           },
-          "dichVus": {
+          "dichVuLoaiPhongs": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/DichVu"
+              "$ref": "#/components/schemas/LoaiPhongDichVu"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoaiPhongDichVu": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dichVusID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dichVu": {
+            "$ref": "#/components/schemas/DichVu"
+          },
+          "loaiPhongsId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "loaiPhong": {
+            "$ref": "#/components/schemas/LoaiPhong"
           }
         },
         "additionalProperties": false

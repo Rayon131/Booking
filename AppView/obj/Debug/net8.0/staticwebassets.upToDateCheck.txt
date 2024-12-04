@@ -37,6 +37,7 @@ wwwroot\img\icon\kitchen-hover.png
 wwwroot\img\icon\minibar.png
 wwwroot\img\icon\minibar.svg
 wwwroot\img\icon\minibar-hover.png
+wwwroot\img\icon\Remove-bg.ai_1732501085934.png
 wwwroot\img\icon\Screenshot 2023-10-02 170956.png
 wwwroot\img\icon\shield.png
 wwwroot\img\icon\shield.svg
@@ -61,6 +62,7 @@ wwwroot\img\room\room-2.jpg
 wwwroot\img\room\room-3.jpg
 wwwroot\img\room\room-4.jpg
 wwwroot\img\room\room-5.jpg
+wwwroot\img\room\room-6.jpg
 wwwroot\img\room-2.jpg
 wwwroot\img\room-5.jpg
 wwwroot\img\room-slider\room-1.jpg
@@ -72,6 +74,7 @@ wwwroot\img\room-slider\room-6.jpg
 wwwroot\img\slider\header-slider-1.jpg
 wwwroot\img\slider\header-slider-2.jpg
 wwwroot\img\slider\header-slider-3.jpg
+wwwroot\img\slider\room-1.jpg
 wwwroot\img\Ticktok.png
 wwwroot\js\booking.js
 wwwroot\js\contact.js

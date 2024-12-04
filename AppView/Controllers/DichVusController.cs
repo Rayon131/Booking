@@ -55,24 +55,24 @@ namespace AppView.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Create([Bind("ID,Ten,MoTa,Hinh,LoaiPhongId")] DichVu dichVu, IFormFile hinh)
+        public async Task<IActionResult> Create([Bind("ID,Ten,MoTa,Hinh,LoaiPhongId,TrangThai")] DichVu dichVu, IFormFile imageFile)
         {
             if (!ModelState.IsValid)
             {
                 // Kiểm tra nếu có hình ảnh được tải lên
-                if (hinh != null && hinh.Length > 0)
+                if (imageFile != null && imageFile.Length > 0)
                 {
                     // Đường dẫn lưu tệp
-                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/icon", hinh.FileName);
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/icon", imageFile.FileName);
 
                     // Lưu tệp vào thư mục
                     using (var stream = new FileStream(filePath, FileMode.Create))
                     {
-                        await hinh.CopyToAsync(stream);
+                        await imageFile.CopyToAsync(stream);
                     }
 
                     // Cập nhật đường dẫn hình ảnh vào thuộc tính Hinh
-                    dichVu.Hinh = hinh.FileName;
+                    dichVu.Hinh = imageFile.FileName;
                 }
 
                 _context.Add(dichVu);  // Thêm đối tượng DichVu vào CSDL
@@ -104,7 +104,7 @@ namespace AppView.Controllers
         // POST: DichVu/Edit/5
         [HttpPost]
        
-        public async Task<IActionResult> Edit(int id,  DichVu dichVu, IFormFile hinh)
+        public async Task<IActionResult> Edit(int id,  DichVu dichVu, IFormFile imageFile)
         {
             if (id != dichVu.ID)
             {
@@ -116,14 +116,19 @@ namespace AppView.Controllers
                 try
                 {
                     // Nếu có hình ảnh mới, lưu hình ảnh và cập nhật đường dẫn
-                    if (hinh != null && hinh.Length > 0)
+                    if (imageFile != null && imageFile.Length > 0)
                     {
-                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/icon", hinh.FileName);
+                        // Đường dẫn lưu tệp
+                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/icon", imageFile.FileName);
+
+                        // Lưu tệp vào thư mục
                         using (var stream = new FileStream(filePath, FileMode.Create))
                         {
-                            await hinh.CopyToAsync(stream);
+                            await imageFile.CopyToAsync(stream);
                         }
-                        dichVu.Hinh = hinh.FileName;
+
+                        // Cập nhật đường dẫn hình ảnh vào thuộc tính Hinh
+                        dichVu.Hinh = imageFile.FileName;
                     }
 
                     _context.Update(dichVu);

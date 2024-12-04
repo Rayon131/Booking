@@ -29,22 +29,39 @@ namespace AppData
 		public DbSet<TikTok> tikTok { get; set; }
 		public DbSet<GG> gGs { get; set; }
 		public DbSet<Inter> inters { get; set; }
+		public DbSet<LoaiPhongDichVu> LoaiPhongDichVu  { get; set; }
 		
 	
 
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<LoaiPhong>()
-			 .HasMany(lp => lp.DichVus)
-			 .WithMany(dv => dv.LoaiPhongs)
-			 .UsingEntity(j => j.ToTable("LoaiPhongDichVu"));
+            base.OnModelCreating(modelBuilder);
+
+            // Cấu hình quan hệ nhiều-nhiều
+            modelBuilder.Entity<LoaiPhongDichVu>()
+                .HasKey(dv => new { dv.DichVusID, dv.LoaiPhongsId });  // Xác định khóa chính cho bảng trung gian
+
+            modelBuilder.Entity<LoaiPhongDichVu>()
+                .HasOne(dv => dv.DichVu)  // Mối quan hệ giữa DichVu và DichVuLoaiPhong
+                .WithMany(dv => dv.DichVuLoaiPhongs)  // Liên kết với DichVu
+                .HasForeignKey(dv => dv.DichVusID);  // Khóa ngoại
+
+            modelBuilder.Entity<LoaiPhongDichVu>()
+                .HasOne(lp => lp.LoaiPhong)  // Mối quan hệ giữa LoaiPhong và DichVuLoaiPhong
+                .WithMany(lp => lp.DichVuLoaiPhongs)  // Liên kết với LoaiPhong
+                .HasForeignKey(lp => lp.LoaiPhongsId);  // Khóa ngoại
+
+            modelBuilder.Entity<AnhChiTiet>()
+			   .HasOne(a => a.LoaiPhong)
+			   .WithMany(l => l.HinhAnhPhongs)
+			   .HasForeignKey(a => a.IdLoaiPhong) // Chỉ rõ ngoại khóa
+			   .OnDelete(DeleteBehavior.Cascade);
         }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer("Data Source=NOONE\\MSSQLSERVER02;Initial Catalog=BOOKING2;Integrated Security=True;Trust Server Certificate=True");
+			optionsBuilder.UseSqlServer("Data Source=NOONE\\MSSQLSERVER02;Initial Catalog=BOOKING20;Integrated Security=True;Trust Server Certificate=True");
 		}
 
 	}

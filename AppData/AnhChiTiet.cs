@@ -11,6 +11,7 @@ namespace AppData
         public int Id { get; set; }
         public string? Anh { get; set; }
         public bool TrangThai { get; set; }
+        public int? IdLoaiPhong { get; set; }
         public LoaiPhong? LoaiPhong { get; set; }
      
     }

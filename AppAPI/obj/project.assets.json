@@ -8178,11 +8178,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppAPI\\AppAPI.csproj",
+      "projectUniqueName": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppAPI\\AppAPI.csproj",
       "projectName": "AppAPI",
-      "projectPath": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppAPI\\AppAPI.csproj",
+      "projectPath": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppAPI\\AppAPI.csproj",
       "packagesPath": "C:\\Users\\dattb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppAPI\\obj\\",
+      "outputPath": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8203,11 +8203,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppData\\AppData.csproj": {
-              "projectPath": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppData\\AppData.csproj"
+            "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\AppData.csproj": {
+              "projectPath": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\AppData.csproj"
             },
-            "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\AppView.csproj": {
-              "projectPath": "C:\\Users\\dattb\\OneDrive\\Desktop\\BOOKING01\\AppView\\AppView.csproj"
+            "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\AppView.csproj": {
+              "projectPath": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\AppView.csproj"
             }
           }
         }

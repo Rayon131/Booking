@@ -19,7 +19,7 @@ namespace AppData
 		public bool TrangThai { get; set; }
 		public ICollection<PhongChiTiet>? phongs { get; set; }
         public ICollection<AnhChiTiet>? HinhAnhPhongs { get; set; }
-        public ICollection<DichVu> DichVus { get; set; } = new List<DichVu>();
+        public ICollection<LoaiPhongDichVu> DichVuLoaiPhongs { get; set; } = new List<LoaiPhongDichVu>();
     }
 
 }
