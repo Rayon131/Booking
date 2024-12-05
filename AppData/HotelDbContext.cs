@@ -15,7 +15,7 @@ namespace AppData
 		public HotelDbContext() { }
 		public DbSet<LoaiPhong> LoaiPhongs { get; set; }
 		public DbSet<DichVu> DichVus { get; set; }
-		public DbSet<PhongChiTiet> PhongChiTiets { get; set; }
+		/*public DbSet<PhongChiTiet> PhongChiTiets { get; set; }*/
 		public DbSet<TaiKhoann> TaiKhoans { get; set; }
 		public DbSet<DatPhong> DatPhongs { get; set; }
 		public DbSet<AnhChiTiet> AnhChiTiets { get; set; }

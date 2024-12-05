@@ -15,9 +15,11 @@ namespace AppData
 		public string MoTa {  get; set; }
 		public string Anh { get; set; }
 		public decimal GiaGoc { get; set; }
+		public string Size { get; set; }
+		public string Giuong { get; set; }
 		public decimal? GiaGiamGia { get; set; }
 		public bool TrangThai { get; set; }
-		public ICollection<PhongChiTiet>? phongs { get; set; }
+		public ICollection<DatPhong>? DatPhongs { get; set; }
         public ICollection<AnhChiTiet>? HinhAnhPhongs { get; set; }
         public ICollection<LoaiPhongDichVu> DichVuLoaiPhongs { get; set; } = new List<LoaiPhongDichVu>();
     }

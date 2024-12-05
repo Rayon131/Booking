@@ -24,6 +24,10 @@
                         <div class="room-des">
                             <h3><a href="#">@loaiPhong.TenLoaiPhong</a></h3>
                             <p>@loaiPhong.MoTa</p>
+                             <ul class="room-size">
+                                    <li><i class="fa fa-arrow-right"></i>Size: @loaiPhong.Size </li>
+                                    <li><i class="fa fa-arrow-right"></i>Beds: @loaiPhong.Giuong </li>
+                                </ul>
                             <ul class="room-icon">
                                 @foreach (var dichVu in loaiPhong.DichVus)
                                 {
@@ -55,6 +59,21 @@
         </div>
     </div>
     <style>
+    .room-size {
+        margin: 0 0 25px 0;
+        padding: 0;
+    }
+
+       .room-size li {
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 15px;
+            list-style-type: none;
+        }
+
+          .room-size li i {
+                margin-right: 6px;
+            }
         .pagination .page-link {
             color: #ffc107; /* Màu vàng */
             border-color: #ffc107; /* Màu viền vàng */
@@ -213,6 +232,7 @@
         }
 
         .room-rate {
+            height : auto;
             color: #FFD700;
             background-color: black;     
             text-align: center;

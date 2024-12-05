@@ -54,19 +54,18 @@ namespace AppData.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
-                    b.Property<int>("CCCD")
-                        .HasColumnType("int");
-
-                    b.Property<string>("GhiChu")
-                        .IsRequired()
+                    b.Property<string>("CCCD")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("IDPhongChiTiet")
-                        .HasColumnType("int");
+                    b.Property<string>("GhiChu")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("KhachHang")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("LoaiPhongID")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("NgayDat")
                         .HasColumnType("datetime2");
@@ -77,32 +76,22 @@ namespace AppData.Migrations
                     b.Property<DateTime>("NgayTra")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("PhongChiTietID")
-                        .HasColumnType("int");
-
                     b.Property<string>("SoDienThoai")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SoLuongPhong")
+                    b.Property<int?>("SoLuongPhong")
                         .HasColumnType("int");
 
-                    b.Property<int>("SoNguoiLon")
+                    b.Property<int?>("SoNguoiLon")
                         .HasColumnType("int");
 
-                    b.Property<int>("SoTreEm")
+                    b.Property<int?>("SoTreEm")
                         .HasColumnType("int");
-
-                    b.Property<decimal>("TongTien")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("TrangThai")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("PhongChiTietID");
+                    b.HasIndex("LoaiPhongID");
 
                     b.ToTable("DatPhongs");
                 });
@@ -269,7 +258,15 @@ namespace AppData.Migrations
                     b.Property<decimal>("GiaGoc")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<string>("Giuong")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("MoTa")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Size")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -330,37 +327,6 @@ namespace AppData.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Menu");
-                });
-
-            modelBuilder.Entity("AppData.PhongChiTiet", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<decimal>("Gia")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int?>("LoaiPhongMaLoaiPhong")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SoNguoi")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TenPhong")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("TrangThai")
-                        .HasColumnType("bit");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("LoaiPhongMaLoaiPhong");
-
-                    b.ToTable("PhongChiTiets");
                 });
 
             modelBuilder.Entity("AppData.Slide", b =>
@@ -440,18 +406,34 @@ namespace AppData.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
-                    b.Property<string>("HinhAnh")
-                        .IsRequired()
+                    b.Property<string>("HinhAnh1")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NoiDungChiTiet")
+                    b.Property<string>("HinhAnh2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HinhAnh3")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NoiDungChiTiet1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NoiDungChiTiet2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NoiDungChiTiet3")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NoiDungChiTiet4")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NoiDungNgan")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("TenTinTuc")
-                        .IsRequired()
+                    b.Property<string>("TenTinTucChinh")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TenTinTucPhu")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("TrangThai")
@@ -498,11 +480,11 @@ namespace AppData.Migrations
 
             modelBuilder.Entity("AppData.DatPhong", b =>
                 {
-                    b.HasOne("AppData.PhongChiTiet", "PhongChiTiet")
-                        .WithMany()
-                        .HasForeignKey("PhongChiTietID");
+                    b.HasOne("AppData.LoaiPhong", "LoaiPhong")
+                        .WithMany("DatPhongs")
+                        .HasForeignKey("LoaiPhongID");
 
-                    b.Navigation("PhongChiTiet");
+                    b.Navigation("LoaiPhong");
                 });
 
             modelBuilder.Entity("AppData.LoaiPhongDichVu", b =>
@@ -524,15 +506,6 @@ namespace AppData.Migrations
                     b.Navigation("LoaiPhong");
                 });
 
-            modelBuilder.Entity("AppData.PhongChiTiet", b =>
-                {
-                    b.HasOne("AppData.LoaiPhong", "LoaiPhong")
-                        .WithMany("phongs")
-                        .HasForeignKey("LoaiPhongMaLoaiPhong");
-
-                    b.Navigation("LoaiPhong");
-                });
-
             modelBuilder.Entity("AppData.DichVu", b =>
                 {
                     b.Navigation("DichVuLoaiPhongs");
@@ -540,11 +513,11 @@ namespace AppData.Migrations
 
             modelBuilder.Entity("AppData.LoaiPhong", b =>
                 {
+                    b.Navigation("DatPhongs");
+
                     b.Navigation("DichVuLoaiPhongs");
 
                     b.Navigation("HinhAnhPhongs");
-
-                    b.Navigation("phongs");
                 });
 #pragma warning restore 612, 618
         }

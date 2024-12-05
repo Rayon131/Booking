@@ -1300,191 +1300,6 @@
         }
       }
     },
-    "/api/PhongChiTiets": {
-      "get": {
-        "tags": [
-          "PhongChiTiets"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/PhongChiTiet"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/PhongChiTiet"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/PhongChiTiet"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "PhongChiTiets"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PhongChiTiet"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PhongChiTiet"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/PhongChiTiet"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/PhongChiTiet"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/PhongChiTiet"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/PhongChiTiet"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/PhongChiTiets/{id}": {
-      "get": {
-        "tags": [
-          "PhongChiTiets"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/PhongChiTiet"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/PhongChiTiet"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/PhongChiTiet"
-                }
-              }
-            }
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "PhongChiTiets"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PhongChiTiet"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PhongChiTiet"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/PhongChiTiet"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "PhongChiTiets"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Slides": {
       "get": {
         "tags": [
@@ -2254,36 +2069,51 @@
         "additionalProperties": false
       },
       "DatPhong": {
+        "required": [
+          "khachHang",
+          "ngayDat",
+          "ngayNhan",
+          "ngayTra",
+          "soDienThoai"
+        ],
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
             "format": "int32"
           },
-          "idPhongChiTiet": {
+          "loaiPhongID": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
           "khachHang": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "cccd": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "soDienThoai": {
+            "pattern": "^\\d{12}$",
             "type": "string",
             "nullable": true
           },
+          "soDienThoai": {
+            "minLength": 1,
+            "pattern": "^(\\+84|0)\\d{9}$",
+            "type": "string"
+          },
           "soNguoiLon": {
+            "maximum": 2147483647,
+            "minimum": 1,
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "soTreEm": {
+            "maximum": 2147483647,
+            "minimum": 0,
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "ngayDat": {
             "type": "string",
@@ -2298,23 +2128,18 @@
             "format": "date-time"
           },
           "soLuongPhong": {
+            "maximum": 2147483647,
+            "minimum": 1,
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "ghiChu": {
             "type": "string",
             "nullable": true
           },
-          "trangThai": {
-            "type": "string",
-            "nullable": true
-          },
-          "tongTien": {
-            "type": "number",
-            "format": "double"
-          },
-          "phongChiTiet": {
-            "$ref": "#/components/schemas/PhongChiTiet"
+          "loaiPhong": {
+            "$ref": "#/components/schemas/LoaiPhong"
           }
         },
         "additionalProperties": false
@@ -2417,6 +2242,14 @@
             "type": "number",
             "format": "double"
           },
+          "size": {
+            "type": "string",
+            "nullable": true
+          },
+          "giuong": {
+            "type": "string",
+            "nullable": true
+          },
           "giaGiamGia": {
             "type": "number",
             "format": "double",
@@ -2425,10 +2258,10 @@
           "trangThai": {
             "type": "boolean"
           },
-          "phongs": {
+          "datPhongs": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/PhongChiTiet"
+              "$ref": "#/components/schemas/DatPhong"
             },
             "nullable": true
           },
@@ -2502,34 +2335,6 @@
         },
         "additionalProperties": false
       },
-      "PhongChiTiet": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "tenPhong": {
-            "type": "string",
-            "nullable": true
-          },
-          "soNguoi": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "trangThai": {
-            "type": "boolean"
-          },
-          "gia": {
-            "type": "number",
-            "format": "double"
-          },
-          "loaiPhong": {
-            "$ref": "#/components/schemas/LoaiPhong"
-          }
-        },
-        "additionalProperties": false
-      },
       "Slide": {
         "type": "object",
         "properties": {
@@ -2576,11 +2381,23 @@
             "type": "integer",
             "format": "int32"
           },
-          "tenTinTuc": {
+          "tenTinTucChinh": {
             "type": "string",
             "nullable": true
           },
-          "hinhAnh": {
+          "tenTinTucPhu": {
+            "type": "string",
+            "nullable": true
+          },
+          "hinhAnh1": {
+            "type": "string",
+            "nullable": true
+          },
+          "hinhAnh2": {
+            "type": "string",
+            "nullable": true
+          },
+          "hinhAnh3": {
             "type": "string",
             "nullable": true
           },
@@ -2588,7 +2405,19 @@
             "type": "string",
             "nullable": true
           },
-          "noiDungChiTiet": {
+          "noiDungChiTiet1": {
+            "type": "string",
+            "nullable": true
+          },
+          "noiDungChiTiet2": {
+            "type": "string",
+            "nullable": true
+          },
+          "noiDungChiTiet3": {
+            "type": "string",
+            "nullable": true
+          },
+          "noiDungChiTiet4": {
             "type": "string",
             "nullable": true
           },

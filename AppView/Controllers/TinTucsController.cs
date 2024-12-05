@@ -18,8 +18,30 @@ namespace AppView.Controllers
             _context = context;
         }
 
-        // GET: TinTucs
-        public async Task<IActionResult> Index()
+		public async Task<IActionResult> MyView()
+		{
+			return View(await _context.tinTucs.ToListAsync());
+
+		}
+		public async Task<IActionResult> XemThem(int id)
+		{
+			if (id == null)
+			{
+				return NotFound();
+			}
+
+			var tinTuc = await _context.tinTucs
+				.FirstOrDefaultAsync(m => m.ID == id);
+			if (tinTuc == null)
+			{
+				return NotFound();
+			}
+
+			return View(tinTuc);
+		}
+
+		// GET: TinTucs
+		public async Task<IActionResult> Index()
         {
             return View(await _context.tinTucs.ToListAsync());
         }
@@ -53,11 +75,47 @@ namespace AppView.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,TenTinTuc,HinhAnh,NoiDungNgan,NoiDungChiTiet,TrangThai")] TinTuc tinTuc)
+        public async Task<IActionResult> Create([Bind("ID,TenTinTucChinh,TenTinTucPhu,HinhAnh1,HinhAnh2,HinhAnh3,NoiDungNgan,NoiDungChiTiet1,NoiDungChiTiet2,NoiDungChiTiet3,NoiDungChiTiet4,TrangThai")] TinTuc tinTuc, IFormFile hinhanh1, IFormFile hinhanh2, IFormFile hinhanh3 )
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                _context.Add(tinTuc);
+				if (hinhanh1 != null && hinhanh1.Length > 0)
+				{
+					// Lưu file vào thư mục trên server
+					var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/about", hinhanh1.FileName);
+					using (var stream = new FileStream(filePath, FileMode.Create))
+					{
+						await hinhanh1.CopyToAsync(stream);
+					}
+					// Lưu đường dẫn file vào database
+					tinTuc.HinhAnh1 = hinhanh1.FileName;
+				}
+
+				if (hinhanh2 != null && hinhanh2.Length > 0)
+				{
+					// Lưu file vào thư mục trên server
+					var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/about", hinhanh2.FileName);
+					using (var stream = new FileStream(filePath, FileMode.Create))
+					{
+						await hinhanh2.CopyToAsync(stream);
+					}
+					// Lưu đường dẫn file vào database
+					tinTuc.HinhAnh2 = hinhanh2.FileName;
+				}
+
+				if (hinhanh3 != null && hinhanh3.Length > 0)
+				{
+					// Lưu file vào thư mục trên server
+					var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/about", hinhanh3.FileName);
+					using (var stream = new FileStream(filePath, FileMode.Create))
+					{
+						await hinhanh3.CopyToAsync(stream);
+					}
+					// Lưu đường dẫn file vào database
+					tinTuc.HinhAnh3 = hinhanh3.FileName;
+				}
+
+				_context.Add(tinTuc);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -85,7 +143,7 @@ namespace AppView.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,TenTinTuc,HinhAnh,NoiDungNgan,NoiDungChiTiet,TrangThai")] TinTuc tinTuc)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,TenTinTucChinh,TenTinTucPhu,HinhAnh1,HinhAnh2,HinhAnh3,NoiDungNgan,NoiDungChiTiet1,NoiDungChiTiet2,NoiDungChiTiet3,NoiDungChiTiet4,TrangThai")] TinTuc tinTuc)
         {
             if (id != tinTuc.ID)
             {

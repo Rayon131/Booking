@@ -24,6 +24,8 @@ namespace AppView.ViewComponents
                  MoTa = lp.MoTa,
                  Anh = lp.Anh,
                  GiaGoc = lp.GiaGoc,
+                 Giuong = lp.Giuong,
+                 Size = lp.Size,
                  GiaGiamGia = lp.GiaGiamGia,
                  TrangThai = lp.TrangThai,
 

@@ -30,6 +30,10 @@
                             <div class="room-des">
                                 <h3><a href="#">@loaiPhong.TenLoaiPhong</a></h3>
                                 <p>@loaiPhong.MoTa</p>
+                                <ul class="room-size">
+                                    <li><i class="fa fa-arrow-right"></i>Size: @loaiPhong.Size </li>
+                                    <li><i class="fa fa-arrow-right"></i>Beds: @loaiPhong.Giuong </li>
+                                </ul>
                                 <ul class="room-icon">
                                     @foreach (var dichVu in loaiPhong.DichVus)
                                     {

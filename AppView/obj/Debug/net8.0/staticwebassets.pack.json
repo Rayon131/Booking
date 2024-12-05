@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\LienHesController.cs",
-      "PackagePath": "staticwebassets\\LienHesController.cs"
-    },
-    {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\css\\hover-style.css",
       "PackagePath": "staticwebassets\\css\\hover-style.css"
     },
@@ -61,6 +57,18 @@
       "PackagePath": "staticwebassets\\img\\about\\call.png"
     },
     {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\about\\room-1.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\room-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\about\\room-2.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\room-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\about\\room-3.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\room-3.jpg"
+    },
+    {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\air-conditioner.png",
       "PackagePath": "staticwebassets\\img\\air-conditioner.png"
     },
@@ -79,6 +87,10 @@
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\call.png",
       "PackagePath": "staticwebassets\\img\\call.png"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\face.png",
+      "PackagePath": "staticwebassets\\img\\face.png"
     },
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\favicon.ico",
@@ -179,6 +191,10 @@
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\icon\\minibar.svg",
       "PackagePath": "staticwebassets\\img\\icon\\minibar.svg"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\icon\\room-1.jpg",
+      "PackagePath": "staticwebassets\\img\\icon\\room-1.jpg"
     },
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\icon\\shield-hover.png",

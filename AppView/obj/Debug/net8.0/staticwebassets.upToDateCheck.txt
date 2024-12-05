@@ -9,11 +9,15 @@ wwwroot\img\about\bathtub.png
 wwwroot\img\about\bathtub.svg
 wwwroot\img\about\bathtub-hover.png
 wwwroot\img\about\call.png
+wwwroot\img\about\room-1.jpg
+wwwroot\img\about\room-2.jpg
+wwwroot\img\about\room-3.jpg
 wwwroot\img\air-conditioner.png
 wwwroot\img\amenities-bg.jpg
 wwwroot\img\apple-favicon.png
 wwwroot\img\bathtub-hover.png
 wwwroot\img\call.png
+wwwroot\img\face.png
 wwwroot\img\favicon.ico
 wwwroot\img\fb.png
 wwwroot\img\GG.png
@@ -38,6 +42,7 @@ wwwroot\img\icon\minibar.png
 wwwroot\img\icon\minibar.svg
 wwwroot\img\icon\minibar-hover.png
 wwwroot\img\icon\Remove-bg.ai_1732501085934.png
+wwwroot\img\icon\room-1.jpg
 wwwroot\img\icon\Screenshot 2023-10-02 170956.png
 wwwroot\img\icon\shield.png
 wwwroot\img\icon\shield.svg
@@ -138,7 +143,6 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-wwwroot\LienHesController.cs
 wwwroot\mail\contact.php
 wwwroot\vendor\animate\animate.css
 wwwroot\vendor\animate\animate.min.css

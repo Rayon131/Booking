@@ -49,7 +49,7 @@ namespace AppView.Controllers
         public IActionResult Create()
         {
             ViewData["DichVusID"] = new SelectList(_context.DichVus, "ID", "Hinh");
-            ViewData["LoaiPhongsId"] = new SelectList(_context.LoaiPhongs, "MaLoaiPhong", "Anh");
+            ViewData["LoaiPhongsId"] = new SelectList(_context.LoaiPhongs, "MaLoaiPhong", "TenLoaiPhong");
             return View();
         }
 
@@ -67,7 +67,7 @@ namespace AppView.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["DichVusID"] = new SelectList(_context.DichVus, "ID", "Hinh", loaiPhongDichVu.DichVusID);
-            ViewData["LoaiPhongsId"] = new SelectList(_context.LoaiPhongs, "MaLoaiPhong", "Anh", loaiPhongDichVu.LoaiPhongsId);
+            ViewData["LoaiPhongsId"] = new SelectList(_context.LoaiPhongs, "MaLoaiPhong", "TenLoaiPhong", loaiPhongDichVu.LoaiPhongsId);
             return View(loaiPhongDichVu);
         }
 
@@ -85,7 +85,7 @@ namespace AppView.Controllers
                 return NotFound();
             }
             ViewData["DichVusID"] = new SelectList(_context.DichVus, "ID", "Hinh", loaiPhongDichVu.DichVusID);
-            ViewData["LoaiPhongsId"] = new SelectList(_context.LoaiPhongs, "MaLoaiPhong", "Anh", loaiPhongDichVu.LoaiPhongsId);
+            ViewData["LoaiPhongsId"] = new SelectList(_context.LoaiPhongs, "MaLoaiPhong", "TenLoaiPhong", loaiPhongDichVu.LoaiPhongsId);
             return View(loaiPhongDichVu);
         }
 
@@ -122,7 +122,7 @@ namespace AppView.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["DichVusID"] = new SelectList(_context.DichVus, "ID", "Hinh", loaiPhongDichVu.DichVusID);
-            ViewData["LoaiPhongsId"] = new SelectList(_context.LoaiPhongs, "MaLoaiPhong", "Anh", loaiPhongDichVu.LoaiPhongsId);
+            ViewData["LoaiPhongsId"] = new SelectList(_context.LoaiPhongs, "MaLoaiPhong", "TenLoaiPhong", loaiPhongDichVu.LoaiPhongsId);
             return View(loaiPhongDichVu);
         }
 

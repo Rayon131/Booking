@@ -30,6 +30,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.TrangThai)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Giuong)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Size)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -53,6 +59,12 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.TrangThai)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.Giuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Size)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.MaLoaiPhong">Edit</a> |
