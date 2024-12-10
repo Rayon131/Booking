@@ -532,3 +532,6 @@ C:\Users\dattb\OneDrive\Desktop\Bookings\AppView\obj\Debug\net8.0\refint\AppView
 C:\Users\dattb\OneDrive\Desktop\Bookings\AppView\obj\Debug\net8.0\AppView.pdb
 C:\Users\dattb\OneDrive\Desktop\Bookings\AppView\obj\Debug\net8.0\AppView.genruntimeconfig.cache
 C:\Users\dattb\OneDrive\Desktop\Bookings\AppView\obj\Debug\net8.0\ref\AppView.dll
+C:\Users\dattb\OneDrive\Desktop\Bookings\AppView\bin\Debug\net8.0\bundleconfig.json
+C:\Users\dattb\OneDrive\Desktop\Bookings\AppView\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\dattb\OneDrive\Desktop\Bookings\AppView\obj\Debug\net8.0\scopedcss\projectbundle\AppView.bundle.scp.css

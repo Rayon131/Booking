@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppView.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AppView.9race749pb.bundle.scp.css"
+    },
+    {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\css\\hover-style.css",
       "PackagePath": "staticwebassets\\css\\hover-style.css"
     },
@@ -419,6 +423,22 @@
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
     },
     {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",

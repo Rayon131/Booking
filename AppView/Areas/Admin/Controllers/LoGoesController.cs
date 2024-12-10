@@ -8,8 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using AppData;
 using AppView.ViewModels;
 
-namespace AppView.Controllers
+namespace AppView.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class LoGoesController : Controller
     {
         private readonly HotelDbContext _context;
@@ -32,13 +33,13 @@ namespace AppView.Controllers
 
         // POST: LoGo/Create
         [HttpPost]
-        
-        public async Task<IActionResult> Create([Bind("ID,Logo,TrangThai")]  LoGo logo, IFormFile imageFile)
+
+        public async Task<IActionResult> Create([Bind("ID,Logo,TrangThai")] LoGo logo, IFormFile imageFile)
         {
-            
+
             /*if (!ModelState.IsValid)*/
             {
-            if (imageFile != null && imageFile.Length > 0)
+                if (imageFile != null && imageFile.Length > 0)
                 {
                     // Lưu file vào thư mục trên server
                     var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", imageFile.FileName);
@@ -77,7 +78,7 @@ namespace AppView.Controllers
             return View(loGo);
         }
 
-      
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -101,7 +102,7 @@ namespace AppView.Controllers
                 return NotFound();
             }
 
-           /* if (!ModelState.IsValid)*/
+            /* if (!ModelState.IsValid)*/
             {
                 if (imageFile != null && imageFile.Length > 0)
                 {
@@ -120,8 +121,8 @@ namespace AppView.Controllers
                 return RedirectToAction(nameof(Index));  // Điều hướng về trang danh sách
             }
 
-              
-            
+
+
             return View(logo);
         }
 

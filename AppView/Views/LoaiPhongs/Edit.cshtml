@@ -38,6 +38,21 @@
                 <input asp-for="GiaGiamGia" class="form-control" />
                 <span asp-validation-for="GiaGiamGia" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label asp-for="SoPhongCon" class="control-label"></label>
+                <input asp-for="SoPhongCon" class="form-control" />
+                <span asp-validation-for="SoPhongCon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Giuong" class="control-label"></label>
+                <input asp-for="Giuong" class="form-control" />
+                <span asp-validation-for="Giuong" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Size" class="control-label"></label>
+                <input asp-for="Size" class="form-control" />
+                <span asp-validation-for="Size" class="text-danger"></span>
+            </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="TrangThai" /> @Html.DisplayNameFor(model => model.TrangThai)

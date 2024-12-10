@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<link href="~/css/bootstrap.min.css" rel="stylesheet">
+	<link href="~/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.13.3/dist/sweetalert2.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head><!--/head-->
+
+<body>
+	<header id="header">
+		<div style="margin-top: 100px;">
+			<h2 class="text-center">Chào mừng bạn đến với Trang Quản Lý!</h2>
+
+			<div class="row">
+				<div class=" fw-bold btn-group-vertical col-sm-3" role="group" aria-label="Vertical button group">
+					<a asp-action="Index" asp-controller="LoGoes" data-ajax="true" class="btn btn-warning">Logo</a>
+					<a asp-action="Index" asp-controller="LienHes" data-ajax="true" class="btn btn-warning">SĐT Liên Hệ</a>
+					<a asp-action="Index" asp-controller="MenuItems" data-ajax="true" class="btn btn-warning">Menu</a>
+					<a asp-action="Index" asp-controller="Slides" data-ajax="true" class="btn btn-warning">Slide</a>
+					<a asp-action="Index" asp-controller="WelComes" data-ajax="true" class="btn btn-warning">Lời Chào</a>
+					<a asp-action="Index" asp-controller="DichVus" data-ajax="true" class="btn btn-warning">Dịch Vụ</a>
+					<a asp-action="Index" asp-controller="LoaiPhongs" data-ajax="true" class="btn btn-warning">Loại Phòng</a>
+					<a asp-action="Index" asp-controller="LoaiPhongDichVus" data-ajax="true" class="btn btn-warning">Loại Phòng Dịch Vụ</a>
+					<a asp-action="Index" asp-controller="AnhChiTiets" data-ajax="true" class="btn btn-warning">Ảnh Chi Tiết</a>
+					<a asp-action="Index" asp-controller="TinTucs" data-ajax="true" class="btn btn-warning">Tin Tức</a>
+
+					<a href="/TaiKhoan/Index" data-ajax="true" class="btn btn-warning">Tài Khoản</a>
+
+					<a asp-action="Index" asp-controller="FaceBooks" data-ajax="true" class="btn btn-warning">FB</a>
+					<a asp-action="Index" asp-controller="GGs" data-ajax="true" class="btn btn-warning">Google</a>
+					<a asp-action="Index" asp-controller="TikToks" data-ajax="true" class="btn btn-warning">Tik Tok</a>
+					<a asp-action="Index" asp-controller="Inters" data-ajax="true" class="btn btn-warning">Instagram</a>
+				</div>
+				<div class="col-sm-9 container" id="content-container">
+
+					@* @Html.Partial("_IndexTaiKhoanPartial") *@
+
+				</div>
+			</div>
+
+		</div>
+	</header><!--/header-->
+	<section>
+		<div class="container">
+			<div class="row">
+				@Html.Partial("_NotificationPartial");
+				@RenderBody()
+			</div>
+		</div>
+	</section>
+
+	@await RenderSectionAsync("Scripts",required:false)
+	<script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.13.3/dist/sweetalert2.all.min.js
+"></script>
+
+	<script>
+		$(function () {
+			var mess = '@TempData["success"]';
+			if (mess != '') {
+				Swal.fire(mess);
+			}
+		});
+	</script>
+</body>
+</html>

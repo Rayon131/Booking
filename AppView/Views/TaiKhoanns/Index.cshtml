@@ -1,4 +1,4 @@
-﻿@model IEnumerable<AppData.LoGo>
+﻿@model IEnumerable<AppData.TaiKhoann>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,10 +13,10 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Logo)
+                @Html.DisplayNameFor(model => model.TaiKhoan)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TrangThai)
+                @Html.DisplayNameFor(model => model.MatKhau)
             </th>
             <th></th>
         </tr>
@@ -25,10 +25,10 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Logo)
+                @Html.DisplayFor(modelItem => item.TaiKhoan)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TrangThai)
+                @Html.DisplayFor(modelItem => item.MatKhau)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |

@@ -2044,6 +2044,9 @@
   "components": {
     "schemas": {
       "AnhChiTiet": {
+        "required": [
+          "anh"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -2051,8 +2054,9 @@
             "format": "int32"
           },
           "anh": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
           },
           "trangThai": {
             "type": "boolean"
@@ -2070,11 +2074,15 @@
       },
       "DatPhong": {
         "required": [
+          "cccd",
           "khachHang",
           "ngayDat",
           "ngayNhan",
           "ngayTra",
-          "soDienThoai"
+          "soDienThoai",
+          "soLuongPhong",
+          "soNguoiLon",
+          "soTreEm"
         ],
         "type": "object",
         "properties": {
@@ -2092,9 +2100,9 @@
             "type": "string"
           },
           "cccd": {
+            "minLength": 1,
             "pattern": "^\\d{12}$",
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "soDienThoai": {
             "minLength": 1,
@@ -2105,15 +2113,13 @@
             "maximum": 2147483647,
             "minimum": 1,
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "soTreEm": {
             "maximum": 2147483647,
             "minimum": 0,
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "ngayDat": {
             "type": "string",
@@ -2131,8 +2137,7 @@
             "maximum": 2147483647,
             "minimum": 1,
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "ghiChu": {
             "type": "string",
@@ -2145,6 +2150,10 @@
         "additionalProperties": false
       },
       "DichVu": {
+        "required": [
+          "hinh",
+          "ten"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -2152,16 +2161,19 @@
             "format": "int32"
           },
           "ten": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
           },
           "moTa": {
+            "maxLength": 500,
+            "minLength": 0,
             "type": "string",
             "nullable": true
           },
           "hinh": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "loaiPhongId": {
             "type": "integer",
@@ -2182,6 +2194,10 @@
         "additionalProperties": false
       },
       "LienHe": {
+        "required": [
+          "logoSDT",
+          "soDienThoai"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -2189,12 +2205,13 @@
             "format": "int32"
           },
           "soDienThoai": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "pattern": "^(\\+84|0)\\d{9}$",
+            "type": "string"
           },
           "logoSDT": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "trangThai": {
             "type": "boolean"
@@ -2203,6 +2220,9 @@
         "additionalProperties": false
       },
       "LoGo": {
+        "required": [
+          "logo"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -2210,8 +2230,8 @@
             "format": "int32"
           },
           "logo": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "trangThai": {
             "type": "boolean"
@@ -2249,6 +2269,10 @@
           "giuong": {
             "type": "string",
             "nullable": true
+          },
+          "soPhongCon": {
+            "type": "integer",
+            "format": "int32"
           },
           "giaGiamGia": {
             "type": "number",
@@ -2307,6 +2331,10 @@
         "additionalProperties": false
       },
       "MenuItem": {
+        "required": [
+          "item",
+          "url"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -2314,14 +2342,17 @@
             "format": "int32"
           },
           "item": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
           },
           "url": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "tenController": {
+            "maxLength": 50,
+            "minLength": 0,
             "type": "string",
             "nullable": true
           },
@@ -2330,12 +2361,17 @@
           },
           "orderIndex": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
       },
       "Slide": {
+        "required": [
+          "hinh",
+          "noiDung"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -2343,12 +2379,14 @@
             "format": "int32"
           },
           "hinh": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
           },
           "noiDung": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
           },
           "trangThai": {
             "type": "boolean"
@@ -2357,6 +2395,10 @@
         "additionalProperties": false
       },
       "TaiKhoann": {
+        "required": [
+          "matKhau",
+          "taiKhoan"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -2364,10 +2406,17 @@
             "format": "int32"
           },
           "taiKhoan": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 50,
+            "minLength": 5,
+            "type": "string"
           },
           "matKhau": {
+            "maxLength": 100,
+            "minLength": 6,
+            "pattern": "^(?=.*[a-zA-Z])(?=.*\\d).+$",
+            "type": "string"
+          },
+          "quyen": {
             "type": "string",
             "nullable": true
           }
@@ -2375,6 +2424,17 @@
         "additionalProperties": false
       },
       "TinTuc": {
+        "required": [
+          "hinhAnh1",
+          "hinhAnh2",
+          "hinhAnh3",
+          "noiDungChiTiet1",
+          "noiDungChiTiet2",
+          "noiDungChiTiet3",
+          "noiDungChiTiet4",
+          "noiDungNgan",
+          "tenTinTucChinh"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -2382,44 +2442,55 @@
             "format": "int32"
           },
           "tenTinTucChinh": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string"
           },
           "tenTinTucPhu": {
+            "maxLength": 200,
+            "minLength": 0,
             "type": "string",
             "nullable": true
           },
           "hinhAnh1": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
           },
           "hinhAnh2": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
           },
           "hinhAnh3": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
           },
           "noiDungNgan": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string"
           },
           "noiDungChiTiet1": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 5000,
+            "minLength": 0,
+            "type": "string"
           },
           "noiDungChiTiet2": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 5000,
+            "minLength": 0,
+            "type": "string"
           },
           "noiDungChiTiet3": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 5000,
+            "minLength": 0,
+            "type": "string"
           },
           "noiDungChiTiet4": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 5000,
+            "minLength": 0,
+            "type": "string"
           },
           "trangThai": {
             "type": "boolean"
@@ -2428,6 +2499,10 @@
         "additionalProperties": false
       },
       "WelCome": {
+        "required": [
+          "noiDung",
+          "wel"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -2435,12 +2510,14 @@
             "format": "int32"
           },
           "wel": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
           },
           "noiDung": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 2000,
+            "minLength": 0,
+            "type": "string"
           },
           "trangThai": {
             "type": "boolean"

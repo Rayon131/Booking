@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@* @{
+    Layout = ViewData["Layout"]?.ToString() ?? "_Layout";  // Nếu không có giá trị trong ViewData, dùng layout mặc định
+} *@
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -27,7 +31,7 @@
     <link href="~/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    
         <header id="header">
             @await Component.InvokeAsync("Logo")
             @await Component.InvokeAsync("LienHe")
@@ -35,6 +39,9 @@
             <nav class="main-menu top-menu">
                 <ul>
                     @await Component.InvokeAsync("Menu")
+                    <li class="nav-item">
+                        <a class="nav-link text-light" asp-area="" asp-controller="TaiKhoans" asp-action="DangNhap">Dang nhap</a>
+                    </li>
                 </ul>
             </nav>
         </header>

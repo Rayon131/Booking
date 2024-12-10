@@ -1,4 +1,4 @@
-﻿@model AppData.LoGo
+﻿@model AppData.LienHe
 
 @{
     ViewData["Title"] = "Edit";
@@ -6,7 +6,7 @@
 
 <h1>Edit</h1>
 
-<h4>LoGo</h4>
+<h4>LienHe</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,18 +14,19 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ID" />
             <div class="form-group">
-                <label asp-for="TrangThai" class="control-label">Trạng thái</label>
-                <select asp-for="TrangThai" class="form-control">
-                    <option value="true">Hoạt động</option>
-                    <option value="false">Không hoạt động</option>
-                </select>
-                <span asp-validation-for="TrangThai" class="text-danger"></span>
+                <label asp-for="SoDienThoai" class="control-label"></label>
+                <input asp-for="SoDienThoai" class="form-control" />
+                <span asp-validation-for="SoDienThoai" class="text-danger"></span>
             </div>
-
             <div class="form-group">
                 <label for="imageFile">Image</label>
                 <input type="file" name="imageFile" class="form-control" />
-                <span asp-validation-for="Logo" class="text-danger"></span>
+                <span asp-validation-for="LogoSDT" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="TrangThai" /> @Html.DisplayNameFor(model => model.TrangThai)
+                </label>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

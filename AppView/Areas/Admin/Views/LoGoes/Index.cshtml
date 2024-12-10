@@ -1,0 +1,43 @@
+﻿@model IEnumerable<AppData.LoGo>
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";  // Đảm bảo đường dẫn chính xác đến layout
+}
+
+<h1>Index</h1>
+
+<p>
+    <a href="/Admin/Logoes/Create">Create New</a>
+    
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Logo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TrangThai)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Logo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrangThai)
+            </td>
+            <td>
+                    <a href="/Admin/Logoes/Edit/@item.ID">Create New</a>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

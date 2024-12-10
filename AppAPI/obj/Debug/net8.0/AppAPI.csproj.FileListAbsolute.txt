@@ -552,3 +552,4 @@ C:\Users\dattb\OneDrive\Desktop\Bookings\AppAPI\obj\Debug\net8.0\refint\AppAPI.d
 C:\Users\dattb\OneDrive\Desktop\Bookings\AppAPI\obj\Debug\net8.0\AppAPI.pdb
 C:\Users\dattb\OneDrive\Desktop\Bookings\AppAPI\obj\Debug\net8.0\AppAPI.genruntimeconfig.cache
 C:\Users\dattb\OneDrive\Desktop\Bookings\AppAPI\obj\Debug\net8.0\ref\AppAPI.dll
+C:\Users\dattb\OneDrive\Desktop\Bookings\AppAPI\bin\Debug\net8.0\bundleconfig.json

@@ -51,7 +51,7 @@ namespace AppView.Controllers
        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("MaLoaiPhong,TenLoaiPhong,MoTa,Anh,GiaGoc,Giuong,Size,GiaGiamGia,TrangThai")] LoaiPhong loaiPhong, IFormFile imageFile)
+        public async Task<IActionResult> Create([Bind("MaLoaiPhong,TenLoaiPhong,MoTa,Anh,GiaGoc,Giuong,Size,GiaGiamGia,TrangThai,SoPhongCon")] LoaiPhong loaiPhong, IFormFile imageFile)
         {
             if (!ModelState.IsValid)
             {
@@ -97,7 +97,7 @@ namespace AppView.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("MaLoaiPhong,TenLoaiPhong,MoTa,Anh,GiaGoc,Giuong,Size,GiaGiamGia,TrangThai")] LoaiPhong loaiPhong, IFormFile imageFile)
+        public async Task<IActionResult> Edit(int id, [Bind("MaLoaiPhong,TenLoaiPhong,MoTa,Anh,GiaGoc,Giuong,Size,GiaGiamGia,TrangThai,SoPhongCon")] LoaiPhong loaiPhong, IFormFile imageFile)
         {
             if (id != loaiPhong.MaLoaiPhong)
             {

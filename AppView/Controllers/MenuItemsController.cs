@@ -81,7 +81,7 @@ namespace AppView.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Item,Url,TenController,TrangThai,OrderIndex")] MenuItem menuItem)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Item,TrangThai")] MenuItem menuItem)
         {
             if (id != menuItem.ID)
             {
@@ -92,7 +92,17 @@ namespace AppView.Controllers
             {
                 try
                 {
-                    _context.Update(menuItem);
+                    // Chỉ cập nhật tên và trạng thái
+                    var existingMenuItem = await _context.Menu.FindAsync(id);
+                    if (existingMenuItem == null)
+                    {
+                        return NotFound();
+                    }
+
+                    existingMenuItem.Item = menuItem.Item;
+                    existingMenuItem.TrangThai = menuItem.TrangThai;
+
+                    _context.Update(existingMenuItem);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -110,6 +120,7 @@ namespace AppView.Controllers
             }
             return View(menuItem);
         }
+
 
         // GET: MenuItems/Delete/5
         public async Task<IActionResult> Delete(int? id)

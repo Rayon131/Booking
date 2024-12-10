@@ -31,7 +31,9 @@ namespace AppData.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Anh")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<int?>("IdLoaiPhong")
                         .HasColumnType("int");
@@ -55,6 +57,7 @@ namespace AppData.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<string>("CCCD")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("GhiChu")
@@ -81,12 +84,13 @@ namespace AppData.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("SoLuongPhong")
+                        .IsRequired()
                         .HasColumnType("int");
 
-                    b.Property<int?>("SoNguoiLon")
+                    b.Property<int>("SoNguoiLon")
                         .HasColumnType("int");
 
-                    b.Property<int?>("SoTreEm")
+                    b.Property<int>("SoTreEm")
                         .HasColumnType("int");
 
                     b.HasKey("ID");
@@ -113,11 +117,13 @@ namespace AppData.Migrations
 
                     b.Property<string>("MoTa")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("Ten")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<bool>("TrangThai")
                         .HasColumnType("bit");
@@ -199,6 +205,30 @@ namespace AppData.Migrations
                     b.ToTable("inters");
                 });
 
+            modelBuilder.Entity("AppData.LichDatPhong", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int>("LoaiPhongID")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Ngay")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("SoLuongDaDat")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("LoaiPhongID");
+
+                    b.ToTable("LichDatPhongs");
+                });
+
             modelBuilder.Entity("AppData.LienHe", b =>
                 {
                     b.Property<int>("ID")
@@ -208,9 +238,11 @@ namespace AppData.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<string>("LogoSDT")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SoDienThoai")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("TrangThai")
@@ -230,6 +262,7 @@ namespace AppData.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<string>("Logo")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("TrangThai")
@@ -269,6 +302,9 @@ namespace AppData.Migrations
                     b.Property<string>("Size")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SoPhongCon")
+                        .HasColumnType("int");
 
                     b.Property<string>("TenLoaiPhong")
                         .IsRequired()
@@ -310,18 +346,21 @@ namespace AppData.Migrations
 
                     b.Property<string>("Item")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("OrderIndex")
+                    b.Property<int?>("OrderIndex")
                         .HasColumnType("int");
 
                     b.Property<string>("TenController")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<bool>("TrangThai")
                         .HasColumnType("bit");
 
                     b.Property<string>("Url")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
@@ -339,11 +378,13 @@ namespace AppData.Migrations
 
                     b.Property<string>("Hinh")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("NoiDung")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<bool>("TrangThai")
                         .HasColumnType("bit");
@@ -365,9 +406,15 @@ namespace AppData.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Quyen")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.Property<string>("TaiKhoan")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("ID");
 
@@ -407,34 +454,53 @@ namespace AppData.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<string>("HinhAnh1")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("HinhAnh2")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("HinhAnh3")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("NoiDungChiTiet1")
+                        .IsRequired()
+                        .HasMaxLength(5000)
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NoiDungChiTiet2")
+                        .IsRequired()
+                        .HasMaxLength(5000)
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NoiDungChiTiet3")
+                        .IsRequired()
+                        .HasMaxLength(5000)
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NoiDungChiTiet4")
+                        .IsRequired()
+                        .HasMaxLength(5000)
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NoiDungNgan")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("TenTinTucChinh")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("TenTinTucPhu")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<bool>("TrangThai")
                         .HasColumnType("bit");
@@ -454,14 +520,16 @@ namespace AppData.Migrations
 
                     b.Property<string>("NoiDung")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
 
                     b.Property<bool>("TrangThai")
                         .HasColumnType("bit");
 
                     b.Property<string>("Wel")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("ID");
 
@@ -483,6 +551,17 @@ namespace AppData.Migrations
                     b.HasOne("AppData.LoaiPhong", "LoaiPhong")
                         .WithMany("DatPhongs")
                         .HasForeignKey("LoaiPhongID");
+
+                    b.Navigation("LoaiPhong");
+                });
+
+            modelBuilder.Entity("AppData.LichDatPhong", b =>
+                {
+                    b.HasOne("AppData.LoaiPhong", "LoaiPhong")
+                        .WithMany()
+                        .HasForeignKey("LoaiPhongID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("LoaiPhong");
                 });

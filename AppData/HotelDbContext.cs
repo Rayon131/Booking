@@ -30,11 +30,9 @@ namespace AppData
 		public DbSet<GG> gGs { get; set; }
 		public DbSet<Inter> inters { get; set; }
 		public DbSet<LoaiPhongDichVu> LoaiPhongDichVu  { get; set; }
-		
-	
+        public DbSet<LichDatPhong> LichDatPhongs { get; set; }
 
-
-		protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
             base.OnModelCreating(modelBuilder);
 
@@ -57,6 +55,13 @@ namespace AppData
 			   .WithMany(l => l.HinhAnhPhongs)
 			   .HasForeignKey(a => a.IdLoaiPhong) // Chỉ rõ ngoại khóa
 			   .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<LichDatPhong>()
+			   .HasOne(ldp => ldp.LoaiPhong)
+			   .WithMany()
+			   .HasForeignKey(ldp => ldp.LoaiPhongID);
+
+
+        
         }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

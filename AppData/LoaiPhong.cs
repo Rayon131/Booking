@@ -17,7 +17,8 @@ namespace AppData
 		public decimal GiaGoc { get; set; }
 		public string Size { get; set; }
 		public string Giuong { get; set; }
-		public decimal? GiaGiamGia { get; set; }
+        public int SoPhongCon { get; set; }
+        public decimal? GiaGiamGia { get; set; }
 		public bool TrangThai { get; set; }
 		public ICollection<DatPhong>? DatPhongs { get; set; }
         public ICollection<AnhChiTiet>? HinhAnhPhongs { get; set; }
