@@ -3,12 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|c:\\users\\dattb\\onedrive\\desktop\\bookings\\appview\\areas\\admin\\views\\shared\\_notificationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\views\\shared\\_notificationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|c:\\users\\dattb\\onedrive\\desktop\\bookings\\appview\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|c:\\users\\dattb\\onedrive\\desktop\\bookings\\appview\\areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|c:\\users\\dattb\\onedrive\\desktop\\bookings\\appview\\areas\\admin\\views\\shared\\_notificationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\views\\shared\\_notificationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|c:\\users\\dattb\\onedrive\\desktop\\bookings\\appview\\areas\\admin\\controllers\\logoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +32,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|c:\\users\\dattb\\onedrive\\desktop\\bookings\\appview\\areas\\admin\\views\\logoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\views\\logoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|c:\\users\\dattb\\onedrive\\desktop\\bookings\\appview\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|c:\\users\\dattb\\onedrive\\desktop\\bookings\\appview\\areas\\admin\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -333,11 +336,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Areas\\Admin\\Views\\LoGoes\\Index.cshtml",
               "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Views\\LoGoes\\Index.cshtml",
@@ -350,7 +353,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAJQTAAAAAAAAAAAowKoTAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-12-10T07:06:59.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "_NotificationPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Areas\\Admin\\Views\\Shared\\_NotificationPartial.cshtml",
               "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Views\\Shared\\_NotificationPartial.cshtml",
@@ -363,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -371,23 +387,25 @@
               "RelativeToolTip": "AppView\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T03:59:14.954Z"
+              "WhenOpened": "2024-12-10T03:59:14.954Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "AppView\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAUwHkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T03:53:15.89Z"
+              "WhenOpened": "2024-12-10T03:53:15.89Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Areas\\Admin\\Views\\LoGoes\\Edit.cshtml",
               "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Views\\LoGoes\\Edit.cshtml",
@@ -399,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Areas\\Admin\\Views\\LoGoes\\Delete.cshtml",
               "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Views\\LoGoes\\Delete.cshtml",
@@ -411,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LoGoesController.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Areas\\Admin\\Controllers\\LoGoesController.cs",
               "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Controllers\\LoGoesController.cs",
@@ -423,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Areas\\Admin\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Views\\Shared\\Error.cshtml",
@@ -435,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Areas\\Admin\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Views\\_ViewImports.cshtml",
@@ -447,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\Shared\\Error.cshtml",
@@ -459,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\_ViewStart.cshtml",
@@ -471,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\TaiKhoanns\\Login.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\TaiKhoanns\\Login.cshtml",
@@ -483,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Program.cs",
               "RelativeDocumentMoniker": "AppView\\Program.cs",
@@ -495,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\Slides\\Create.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\Slides\\Create.cshtml",
@@ -507,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\Shared\\_Layout.cshtml",
@@ -519,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "TaiKhoannsController.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Controllers\\TaiKhoannsController.cs",
               "RelativeDocumentMoniker": "AppView\\Controllers\\TaiKhoannsController.cs",
@@ -531,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "DatPhongsController.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Controllers\\DatPhongsController.cs",
               "RelativeDocumentMoniker": "AppView\\Controllers\\DatPhongsController.cs",
@@ -543,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "LoaiPhongsController.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Controllers\\LoaiPhongsController.cs",
               "RelativeDocumentMoniker": "AppView\\Controllers\\LoaiPhongsController.cs",
@@ -555,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "MenuItemsController.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Controllers\\MenuItemsController.cs",
               "RelativeDocumentMoniker": "AppView\\Controllers\\MenuItemsController.cs",
@@ -567,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "LienHesController.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Controllers\\LienHesController.cs",
               "RelativeDocumentMoniker": "AppView\\Controllers\\LienHesController.cs",
@@ -579,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "HotelDbContext.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\HotelDbContext.cs",
               "RelativeDocumentMoniker": "AppData\\HotelDbContext.cs",
@@ -591,7 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "LoaiPhongDichVu.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\LoaiPhongDichVu.cs",
               "RelativeDocumentMoniker": "AppData\\LoaiPhongDichVu.cs",
@@ -603,7 +621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Inter.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\Inter.cs",
               "RelativeDocumentMoniker": "AppData\\Inter.cs",
@@ -615,7 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\TaiKhoanns\\Create.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\TaiKhoanns\\Create.cshtml",
@@ -627,7 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Default.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\Shared\\Components\\Menu\\Default.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\Shared\\Components\\Menu\\Default.cshtml",
@@ -639,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "AppView\\ViewModels\\LoginViewModel.cs",
@@ -651,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "TaiKhoann.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\TaiKhoann.cs",
               "RelativeDocumentMoniker": "AppData\\TaiKhoann.cs",
@@ -663,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "LoGo.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\LoGo.cs",
               "RelativeDocumentMoniker": "AppData\\LoGo.cs",
@@ -675,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "DatPhong.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\DatPhong.cs",
               "RelativeDocumentMoniker": "AppData\\DatPhong.cs",
@@ -687,7 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "AnhChiTiet.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\AnhChiTiet.cs",
               "RelativeDocumentMoniker": "AppData\\AnhChiTiet.cs",
@@ -699,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Slide.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\Slide.cs",
               "RelativeDocumentMoniker": "AppData\\Slide.cs",
@@ -711,7 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "DichVu.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\DichVu.cs",
               "RelativeDocumentMoniker": "AppData\\DichVu.cs",
@@ -723,7 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\MenuItems\\Edit.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\MenuItems\\Edit.cshtml",
@@ -735,7 +753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "FaceBook.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\FaceBook.cs",
               "RelativeDocumentMoniker": "AppData\\FaceBook.cs",
@@ -747,7 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "AnhChiTietsController.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Controllers\\AnhChiTietsController.cs",
               "RelativeDocumentMoniker": "AppView\\Controllers\\AnhChiTietsController.cs",
@@ -759,7 +777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "MenuItem.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\MenuItem.cs",
               "RelativeDocumentMoniker": "AppData\\MenuItem.cs",
@@ -771,7 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "TikTok.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\TikTok.cs",
               "RelativeDocumentMoniker": "AppData\\TikTok.cs",
@@ -783,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "WelCome.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\WelCome.cs",
               "RelativeDocumentMoniker": "AppData\\WelCome.cs",
@@ -795,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "GG.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\GG.cs",
               "RelativeDocumentMoniker": "AppData\\GG.cs",
@@ -807,7 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "WelComesController.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Controllers\\WelComesController.cs",
               "RelativeDocumentMoniker": "AppView\\Controllers\\WelComesController.cs",
@@ -819,7 +837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\DatPhongs\\Create.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\DatPhongs\\Create.cshtml",
@@ -831,7 +849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\LoaiPhongs\\Create.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\LoaiPhongs\\Create.cshtml",
@@ -843,7 +861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "LoaiPhong.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\LoaiPhong.cs",
               "RelativeDocumentMoniker": "AppData\\LoaiPhong.cs",
@@ -855,7 +873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\LoaiPhongs\\Edit.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\LoaiPhongs\\Edit.cshtml",
@@ -867,7 +885,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\LoaiPhongs\\Index.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\LoaiPhongs\\Index.cshtml",
@@ -879,7 +897,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "LienHe.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\LienHe.cs",
               "RelativeDocumentMoniker": "AppData\\LienHe.cs",
@@ -891,7 +909,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 80,
               "Title": "LichDatPhong.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\LichDatPhong.cs",
               "RelativeDocumentMoniker": "AppData\\LichDatPhong.cs",
@@ -903,7 +921,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 81,
               "Title": "20241206023930_Booksto.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\Migrations\\20241206023930_Booksto.cs",
               "RelativeDocumentMoniker": "AppData\\Migrations\\20241206023930_Booksto.cs",
@@ -915,7 +933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "20241205034751_updat.Designer.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\Migrations\\20241205034751_updat.Designer.cs",
               "RelativeDocumentMoniker": "AppData\\Migrations\\20241205034751_updat.Designer.cs",
@@ -927,7 +945,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "Default.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\Shared\\Components\\Logo\\Default.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\Shared\\Components\\Logo\\Default.cshtml",
@@ -939,7 +957,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\Room\\Index.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\Room\\Index.cshtml",
@@ -951,7 +969,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "Default.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\Shared\\Components\\LienHe\\Default.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\Shared\\Components\\LienHe\\Default.cshtml",
@@ -963,7 +981,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "RoomSuggestionViewComponent.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\ViewComponents\\RoomSuggestionViewComponent.cs",
               "RelativeDocumentMoniker": "AppView\\ViewComponents\\RoomSuggestionViewComponent.cs",
@@ -975,7 +993,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "RoomSuggestionViewModel.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\ViewModels\\RoomSuggestionViewModel.cs",
               "RelativeDocumentMoniker": "AppView\\ViewModels\\RoomSuggestionViewModel.cs",
@@ -987,7 +1005,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "MyView.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\TinTucs\\MyView.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\TinTucs\\MyView.cshtml",
@@ -999,7 +1017,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\LienHes\\Create.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\LienHes\\Create.cshtml",
@@ -1011,7 +1029,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\LienHes\\Edit.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\LienHes\\Edit.cshtml",
@@ -1023,7 +1041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\TikToks\\Create.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\TikToks\\Create.cshtml",
@@ -1035,7 +1053,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "TinTucViewComponent.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\ViewComponents\\TinTucViewComponent.cs",
               "RelativeDocumentMoniker": "AppView\\ViewComponents\\TinTucViewComponent.cs",
@@ -1047,7 +1065,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "Default.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\Shared\\Components\\TinTuc\\Default.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\Shared\\Components\\TinTuc\\Default.cshtml",
@@ -1059,7 +1077,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "Default.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\Shared\\Components\\DichVu\\Default.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\Shared\\Components\\DichVu\\Default.cshtml",
@@ -1071,7 +1089,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 77,
               "Title": "20241205034751_updat.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\Migrations\\20241205034751_updat.cs",
               "RelativeDocumentMoniker": "AppData\\Migrations\\20241205034751_updat.cs",
@@ -1083,7 +1101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "TinTuc.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\TinTuc.cs",
               "RelativeDocumentMoniker": "AppData\\TinTuc.cs",
@@ -1095,7 +1113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "TinTuc.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\Documents\\Zalo Received Files\\TinTuc.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Documents\\Zalo Received Files\\TinTuc.cs",
@@ -1107,7 +1125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\css\\style.css",
               "RelativeDocumentMoniker": "AppView\\wwwroot\\css\\style.css",
@@ -1119,7 +1137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\GGs\\Index.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\GGs\\Index.cshtml",
@@ -1131,7 +1149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 78,
               "Title": "20241205012657_Bookstore3.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\Migrations\\20241205012657_Bookstore3.cs",
               "RelativeDocumentMoniker": "AppData\\Migrations\\20241205012657_Bookstore3.cs",
@@ -1143,7 +1161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 79,
               "Title": "20241205014315_vali.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\Migrations\\20241205014315_vali.cs",
               "RelativeDocumentMoniker": "AppData\\Migrations\\20241205014315_vali.cs",
@@ -1155,7 +1173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\DatPhongs\\Details.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\DatPhongs\\Details.cshtml",
@@ -1167,7 +1185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\DichVus\\Create.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\DichVus\\Create.cshtml",
@@ -1179,7 +1197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 76,
               "Title": "20241204025530_hello.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\Migrations\\20241204025530_hello.cs",
               "RelativeDocumentMoniker": "AppData\\Migrations\\20241204025530_hello.cs",
@@ -1191,7 +1209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 66,
               "Title": "hover-style.css",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\css\\hover-style.css",
               "RelativeDocumentMoniker": "AppView\\wwwroot\\css\\hover-style.css",
@@ -1203,7 +1221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 67,
               "Title": "Default.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\Shared\\Components\\RoomSuggestion\\Default.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\Shared\\Components\\RoomSuggestion\\Default.cshtml",
@@ -1215,7 +1233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 69,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\AnhChiTiets\\Edit.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\AnhChiTiets\\Edit.cshtml",
@@ -1227,7 +1245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 68,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\AnhChiTiets\\Create.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\AnhChiTiets\\Create.cshtml",
@@ -1239,7 +1257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 71,
               "Title": "20241202084811_Bookstoresa.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\Migrations\\20241202084811_Bookstoresa.cs",
               "RelativeDocumentMoniker": "AppData\\Migrations\\20241202084811_Bookstoresa.cs",
@@ -1251,7 +1269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 70,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\Views\\DichVus\\Edit.cshtml",
               "RelativeDocumentMoniker": "AppView\\Views\\DichVus\\Edit.cshtml",
@@ -1263,7 +1281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 72,
               "Title": "20241202080747_Book.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\Migrations\\20241202080747_Book.cs",
               "RelativeDocumentMoniker": "AppData\\Migrations\\20241202080747_Book.cs",
@@ -1275,7 +1293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 73,
               "Title": "20241202081125_Bookstore300.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\Migrations\\20241202081125_Bookstore300.cs",
               "RelativeDocumentMoniker": "AppData\\Migrations\\20241202081125_Bookstore300.cs",
@@ -1287,7 +1305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 74,
               "Title": "20241202080941_Bookstore3o.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\Migrations\\20241202080941_Bookstore3o.cs",
               "RelativeDocumentMoniker": "AppData\\Migrations\\20241202080941_Bookstore3o.cs",
@@ -1299,7 +1317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 75,
               "Title": "20241202074013_Booksking.cs",
               "DocumentMoniker": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\Migrations\\20241202074013_Booksking.cs",
               "RelativeDocumentMoniker": "AppData\\Migrations\\20241202074013_Booksking.cs",
