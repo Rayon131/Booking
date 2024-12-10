@@ -1,0 +1,71 @@
+﻿@model AppData.DichVu
+
+
+@{
+    ViewData["Title"] = "Edit DichVus";
+}
+
+<h1>Edit DichVu</h1>
+
+<div class="container mt-4">
+    <h2 class="text-center">Chỉnh sửa Dịch Vụ</h2>
+    <form asp-action="Edit" enctype="multipart/form-data" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="ID" />
+
+        <!-- Tên dịch vụ -->
+        <div class="form-group">
+            <label asp-for="Ten" class="control-label">Tên Dịch Vụ</label>
+            <input asp-for="Ten" class="form-control" />
+            <span asp-validation-for="Ten" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="MoTa" class="control-label">Tên Dịch Vụ</label>
+            <input asp-for="MoTa" class="form-control" />
+            <span asp-validation-for="MoTa" class="text-danger"></span>
+        </div>
+
+        <!-- Trạng thái -->
+        <div class="form-group">
+            <label asp-for="TrangThai" class="control-label">Trạng Thái</label>
+            <select asp-for="TrangThai" class="form-control">
+                <option value="true">Hoạt động</option>
+                <option value="false">Không hoạt động</option>
+            </select>
+            <span asp-validation-for="TrangThai" class="text-danger"></span>
+        </div>
+
+        <!-- Hình ảnh hiện tại -->
+        <div class="form-group">
+            <label class="control-label">Hình ảnh hiện tại</label>
+            @if (!string.IsNullOrEmpty(Model.Hinh))
+            {
+                <div class="mb-3">
+                    <img src="~/img/icon/@Model.Hinh" alt="Hình dịch vụ" class="img-thumbnail" style="max-height: 150px;" />
+                </div>
+            }
+            else
+            {
+                <p class="text-muted">Chưa có hình ảnh.</p>
+            }
+        </div>
+
+        <!-- Upload hình ảnh mới -->
+        <div class="form-group">
+            <label for="imageFile" class="control-label">Thay đổi Hình</label>
+            <input type="file" name="imageFile" class="form-control" />
+            <span asp-validation-for="Hinh" class="text-danger"></span>
+        </div>
+
+        <!-- Nút lưu -->
+        <div class="form-group mt-3">
+            <input type="submit" value="Lưu" class="btn btn-primary" />
+            <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -76,6 +76,7 @@ wwwroot\img\room-slider\room-3.jpg
 wwwroot\img\room-slider\room-4.jpg
 wwwroot\img\room-slider\room-5.jpg
 wwwroot\img\room-slider\room-6.jpg
+wwwroot\img\slider\amenities-bg.jpg
 wwwroot\img\slider\header-slider-1.jpg
 wwwroot\img\slider\header-slider-2.jpg
 wwwroot\img\slider\header-slider-3.jpg

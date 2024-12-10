@@ -15,7 +15,9 @@ namespace AppData
         public string? SoDienThoai { get; set; }
 
         [Required(ErrorMessage = "Hình không thể để trống.")]
-        public string? LogoSDT { get; set; }
+        public string? Logo { get; set; }
+
+        public string? Url  { get; set; }
         public bool TrangThai { get; set; }
 
     }

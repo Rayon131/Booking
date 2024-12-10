@@ -10,9 +10,8 @@ namespace AppData
     public class Slide
     {
         public int ID { get; set; }
-        [Required(ErrorMessage = "Hình không thể để trống.")]
-        [StringLength(255, ErrorMessage = "Đường dẫn hình không được vượt quá 255 ký tự.")]
-        public string Hinh { get; set; }
+       
+        public string? Hinh { get; set; }
 
         [Required(ErrorMessage = "Nội dung không thể để trống.")]
         [StringLength(50, ErrorMessage = "Nội dung không được vượt quá 50 ký tự.")]

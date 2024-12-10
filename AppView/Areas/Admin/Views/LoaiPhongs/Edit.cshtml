@@ -1,0 +1,108 @@
+﻿@model AppData.LoaiPhong
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";  // Đảm bảo đường dẫn chính xác đến layout
+}
+
+<h1>Edit</h1>
+
+<h4>Loại Phòng</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaLoaiPhong" />
+
+            <!-- Trạng thái -->
+            <div class="form-group">
+                <label asp-for="TrangThai" class="control-label">Trạng thái</label>
+                <select asp-for="TrangThai" class="form-control">
+                    <option value="true" selected>Hoạt động</option>
+                    <option value="false">Không hoạt động</option>
+                </select>
+                <span asp-validation-for="TrangThai" class="text-danger"></span>
+            </div>
+
+            <!-- Hiển thị ảnh hiện tại -->
+            <div class="form-group">
+                <label>Ảnh hiện tại</label>
+                <div>
+                    @if (!string.IsNullOrEmpty(Model.Anh))
+                    {
+                        <img src="~/img/room/@Model.Anh" alt="Loại Phòng" style="max-width: 100%; height: auto; margin-bottom: 10px;" />
+                    }
+                    else
+                    {
+                        <p>Chưa có ảnh</p>
+                    }
+                </div>
+            </div>
+
+            <!-- Input chọn ảnh mới -->
+            <div class="form-group">
+                <label for="imageFile">Chọn ảnh mới (nếu muốn thay đổi)</label>
+                <input type="file" name="imageFile" class="form-control" />
+                <span asp-validation-for="Anh" class="text-danger"></span>
+            </div>
+
+
+            <!-- Các trường khác của loại phòng -->
+            <div class="form-group">
+                <label asp-for="TenLoaiPhong" class="control-label">Tên Loại Phòng</label>
+                <input asp-for="TenLoaiPhong" class="form-control" />
+                <span asp-validation-for="TenLoaiPhong" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MoTa" class="control-label">Mô Tả</label>
+                <textarea asp-for="MoTa" class="form-control"></textarea>
+                <span asp-validation-for="MoTa" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="GiaGoc" class="control-label">Giá Gốc</label>
+                <input asp-for="GiaGoc" class="form-control" />
+                <span asp-validation-for="GiaGoc" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Giuong" class="control-label">Giường</label>
+                <input asp-for="Giuong" class="form-control" />
+                <span asp-validation-for="Giuong" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Size" class="control-label">Size</label>
+                <input asp-for="Size" class="form-control" />
+                <span asp-validation-for="Size" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="GiaGiamGia" class="control-label">Giá Giảm Giá</label>
+                <input asp-for="GiaGiamGia" class="form-control" />
+                <span asp-validation-for="GiaGiamGia" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SoPhongCon" class="control-label">Số Phòng Còn</label>
+                <input asp-for="SoPhongCon" class="form-control" />
+                <span asp-validation-for="SoPhongCon" class="text-danger"></span>
+            </div>
+
+            <!-- Nút lưu -->
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

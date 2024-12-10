@@ -14,7 +14,7 @@ namespace AppView.ViewComponents
             var data = db.lienHes.Select(x => new LienHeVM
             {
                 SoDienThoai = x.SoDienThoai,
-                LogoSDT = x.LogoSDT,
+                LogoS = x.Logo,
             });
             return View(data);
         }

@@ -1,25 +1,39 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	
-	<link href="~/css/bootstrap.min.css" rel="stylesheet">
-	<link href="~/css/font-awesome.min.css" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.13.3/dist/sweetalert2.min.css" rel="stylesheet">
-	<!--[if lt IE 9]>
-	<script src="js/html5shiv.js"></script>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicons -->
+    <link href="~/img/favicon.ico" rel="icon">
+    <link href="~/img/apple-favicon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <!-- Vendor CSS File -->
+    <link href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/vendor/animate/animate.min.css" rel="stylesheet">
+    <link href="~/vendor/slick/slick.css" rel="stylesheet">
+    <link href="~/vendor/slick/slick-theme.css" rel="stylesheet">
+    <link href="~/vendor/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.13.3/dist/sweetalert2.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
 
 </head><!--/head-->
 
 <body>
     <header id="header">
         <div style="margin-top: 100px;">
-            <h2 class="text-center">Chào mừng bạn đến với Trang Quản Lý!</h2>
             <div class="row">
                 <!-- Sidebar Menu -->
                 <div class="menu-sidebar fw-bold col-sm-3" role="group" aria-label="Vertical button group">
@@ -76,16 +90,53 @@
             </div>
         </div>
     </header>
-    !--/header-->
-	<section>
-		<div class="container">
-			<div class="row">
-				
-				@RenderBody()
-			</div>
-		</div>
-	</section>
+
+    <section>
+        <div class="container">
+            <div class="row" style="margin-left:10%">
+
+                @RenderBody()
+            </div>
+        </div>
+    </section>
     <style>
+        .menu-sidebar {
+            background-color: #f8f9fa;
+            padding: 15px;
+            min-height: 100vh; /* Đảm bảo menu kéo dài toàn chiều cao */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed; /* Giữ menu cố định khi cuộn */
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+            z-index: 1000;
+            width: 15%; /* Menu chiếm 20% */
+        }
+
+        .menu-item {
+            display: block;
+            padding: 10px 15px;
+            margin: 5px 0;
+            color: #212529;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            font-size: 16px;
+        }
+
+            .menu-item i {
+                margin-right: 10px;
+            }
+
+            .menu-item:hover {
+                background-color: #ffc107;
+                color: white;
+            }
+
+        .content-container {
+            margin-left: 20%; /* Đẩy nội dung bên phải của menu */
+        }
+
         .menu-sidebar {
             background-color: #f8f9fa;
             padding: 15px;
@@ -123,18 +174,40 @@
 
         }
     </style>
-	@await RenderSectionAsync("Scripts",required:false)
-	<script src="
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="
 https://cdn.jsdelivr.net/npm/sweetalert2@11.13.3/dist/sweetalert2.all.min.js
 "></script>
 
-	<script>
-		$(function () {
-			var mess = '@TempData["success"]';
-			if (mess != '') {
-				Swal.fire(mess);
-			}
-		});
-	</script>
+    <script>
+        $(function () {
+            var mess = '@TempData["success"]';
+            if (mess != '') {
+                Swal.fire(mess);
+            }
+        });
+    </script>
+
+
+    <!-- Vendor JavaScript File -->
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/jquery/jquery-migrate.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/vendor/easing/easing.min.js"></script>
+    <script src="~/vendor/stickyjs/sticky.js"></script>
+    <script src="~/vendor/superfish/hoverIntent.js"></script>
+    <script src="~/vendor/superfish/superfish.min.js"></script>
+    <script src="~/vendor/wow/wow.min.js"></script>
+    <script src="~/vendor/slick/slick.min.js"></script>
+    <script src="~/vendor/tempusdominus/js/moment.min.js"></script>
+    <script src="~/vendor/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="~/vendor/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Booking Javascript File -->
+    <script src="~/js/booking.js"></script>
+    <script src="~/js/jqBootstrapValidation.min.js"></script>
+
+    <!-- Main Javascript File -->
+    <script src="~/js/main.js"></script>
 </body>
 </html>

@@ -102,29 +102,68 @@ namespace AppView.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            /* if (!ModelState.IsValid)*/
+            // Tìm logo hiện tại trong cơ sở dữ liệu
+            var existingLogo = await _context.loGos.FindAsync(id);
+            if (existingLogo == null)
             {
-                if (imageFile != null && imageFile.Length > 0)
-                {
-                    // Lưu file vào thư mục trên server
-                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", imageFile.FileName);
-                    using (var stream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await imageFile.CopyToAsync(stream);
-                    }
-
-                    // Lưu đường dẫn file vào database
-                    logo.Logo = imageFile.FileName;
-                }
-                _context.Update(logo);  // Thêm đối tượng DichVu vào CSDL
-                _context.SaveChanges();  // Lưu thay đổi vào CSDL
-                return RedirectToAction(nameof(Index));  // Điều hướng về trang danh sách
+                return NotFound();
             }
 
+            // Kiểm tra xem người dùng có tải lên tệp mới không
+            if (imageFile != null && imageFile.Length > 0)
+            {
+                // Lưu file mới vào thư mục trên server
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img");
+                var filePath = Path.Combine(uploadsFolder, imageFile.FileName);
 
+                // Tạo thư mục nếu chưa tồn tại
+                if (!Directory.Exists(uploadsFolder))
+                {
+                    Directory.CreateDirectory(uploadsFolder);
+                }
 
-            return View(logo);
+                // Lưu tệp vào server
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await imageFile.CopyToAsync(stream);
+                }
+
+                // Cập nhật đường dẫn file mới vào logo
+                logo.Logo =imageFile.FileName;
+            }
+            else
+            {
+                // Nếu không tải lên file mới, giữ lại đường dẫn file cũ
+                logo.Logo = existingLogo.Logo;
+            }
+
+            try
+            {
+                // Cập nhật thông tin logo
+                _context.Entry(existingLogo).CurrentValues.SetValues(logo);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!LoGoExists(logo.ID))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return RedirectToAction(nameof(Index));
         }
+
+        // Hàm kiểm tra tồn tại
+      /*  private bool LoGoExists(int id)
+        {
+            return _context.LoGoes.Any(e => e.ID == id);
+        }*/
+
 
         // GET: LoGoes/Delete/5
         public async Task<IActionResult> Delete(int? id)

@@ -13,25 +13,46 @@
         <form asp-action="Edit" enctype="multipart/form-data" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ID" />
+
+            <!-- Trạng thái -->
             <div class="form-group">
                 <label asp-for="TrangThai" class="control-label">Trạng thái</label>
                 <select asp-for="TrangThai" class="form-control">
-                    <option value="true">Hoạt động</option>
+                    <option value="true" selected>Hoạt động</option>
                     <option value="false">Không hoạt động</option>
                 </select>
                 <span asp-validation-for="TrangThai" class="text-danger"></span>
             </div>
 
+            <!-- Hiển thị ảnh hiện tại -->
             <div class="form-group">
-                <label for="imageFile">Image</label>
+                <label>Ảnh hiện tại</label>
+                <div>
+                    @if (!string.IsNullOrEmpty(Model.Logo))
+                    {
+                        <img src="~/img/@Model.Logo" alt="Logo" style="max-width: 100%; height: auto; margin-bottom: 10px;" />
+                    }
+                    else
+                    {
+                        <p>Chưa có ảnh</p>
+                    }
+                </div>
+            </div>
+
+            <!-- Input chọn ảnh mới -->
+            <div class="form-group">
+                <label for="imageFile">Chọn ảnh mới (nếu muốn thay đổi)</label>
                 <input type="file" name="imageFile" class="form-control" />
                 <span asp-validation-for="Logo" class="text-danger"></span>
             </div>
+
+            <!-- Nút lưu -->
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Lưu" class="btn btn-primary" />
             </div>
         </form>
     </div>
+
 </div>
 
 <div>

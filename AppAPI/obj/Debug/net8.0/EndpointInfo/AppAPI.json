@@ -2044,9 +2044,6 @@
   "components": {
     "schemas": {
       "AnhChiTiet": {
-        "required": [
-          "anh"
-        ],
         "type": "object",
         "properties": {
           "id": {
@@ -2056,7 +2053,8 @@
           "anh": {
             "maxLength": 255,
             "minLength": 0,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "trangThai": {
             "type": "boolean"
@@ -2195,7 +2193,7 @@
       },
       "LienHe": {
         "required": [
-          "logoSDT",
+          "logo",
           "soDienThoai"
         ],
         "type": "object",
@@ -2209,9 +2207,13 @@
             "pattern": "^(\\+84|0)\\d{9}$",
             "type": "string"
           },
-          "logoSDT": {
+          "logo": {
             "minLength": 1,
             "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "nullable": true
           },
           "trangThai": {
             "type": "boolean"
@@ -2369,7 +2371,6 @@
       },
       "Slide": {
         "required": [
-          "hinh",
           "noiDung"
         ],
         "type": "object",
@@ -2379,9 +2380,8 @@
             "format": "int32"
           },
           "hinh": {
-            "maxLength": 255,
-            "minLength": 0,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "noiDung": {
             "maxLength": 50,

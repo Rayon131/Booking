@@ -6,15 +6,16 @@ using static AppView.ViewModels.DetailsRoomVM;
 
 namespace AppView.Controllers
 {
+
     public class RoomController : Controller
     {
-        
-            private readonly HotelDbContext _context; // Đảm bảo bạn có DbContext của mình
 
-            public RoomController(HotelDbContext context)
-            {
-                _context = context;
-            }
+        private readonly HotelDbContext _context; // Đảm bảo bạn có DbContext của mình
+
+        public RoomController(HotelDbContext context)
+        {
+            _context = context;
+        }
 
         // GET: LoaiPhong
         public ActionResult Index(int page = 1)

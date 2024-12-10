@@ -10,7 +10,7 @@ namespace AppData
     public class AnhChiTiet
     {
         public int Id { get; set; }
-        [Required(ErrorMessage = "Ảnh không thể để trống.")]
+       
         [StringLength(255, ErrorMessage = "Ảnh không được quá 255 ký tự.")]
         public string? Anh { get; set; }
         public bool TrangThai { get; set; }

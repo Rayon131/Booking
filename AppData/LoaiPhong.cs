@@ -13,7 +13,7 @@ namespace AppData
 		public int MaLoaiPhong { get; set; }
 		public string TenLoaiPhong { get; set; }
 		public string MoTa {  get; set; }
-		public string Anh { get; set; }
+		public string? Anh { get; set; }
 		public decimal GiaGoc { get; set; }
 		public string Size { get; set; }
 		public string Giuong { get; set; }

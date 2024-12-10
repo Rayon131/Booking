@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5OVofwvgesNaS6sHbUMkt0z79hTDOcV7Lui5ynkQlJE=",
+  "Hash": "2A+W+v2yRaamsqUIxca0v6HPJs5KDAPZnx+5X98qezg=",
   "Source": "AppAPI",
   "BasePath": "_content/AppAPI",
   "Mode": "Default",
@@ -1707,6 +1707,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\room-slider\\room-6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\slider\\amenities-bg.jpg",
+      "SourceId": "AppView",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\",
+      "BasePath": "_content/AppView",
+      "RelativePath": "img/slider/amenities-bg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a69xf6twxt",
+      "Integrity": "TjwWKRSeodDLPH0rY/yzxZHXe9jv2dNruoVP/LMTleU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\slider\\amenities-bg.jpg"
     },
     {
       "Identity": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\slider\\header-slider-1.jpg",
@@ -5403,7 +5424,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 04:01:59 GMT"
+          "Value": "Tue, 10 Dec 2024 08:02:54 GMT"
         }
       ],
       "EndpointProperties": [
@@ -5448,7 +5469,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 04:01:59 GMT"
+          "Value": "Tue, 10 Dec 2024 08:02:54 GMT"
         }
       ],
       "EndpointProperties": [
@@ -5567,7 +5588,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Dec 2024 07:38:35 GMT"
+          "Value": "Tue, 10 Dec 2024 08:03:08 GMT"
         }
       ],
       "EndpointProperties": [
@@ -5612,7 +5633,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Dec 2024 07:38:35 GMT"
+          "Value": "Tue, 10 Dec 2024 08:03:08 GMT"
         }
       ],
       "EndpointProperties": [
@@ -6760,7 +6781,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 07:11:57 GMT"
+          "Value": "Tue, 10 Dec 2024 09:37:30 GMT"
         }
       ],
       "EndpointProperties": [
@@ -6834,7 +6855,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 07:11:57 GMT"
+          "Value": "Tue, 10 Dec 2024 09:37:30 GMT"
         }
       ],
       "EndpointProperties": [
@@ -9339,7 +9360,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Dec 2024 08:12:26 GMT"
+          "Value": "Tue, 10 Dec 2024 08:03:18 GMT"
         }
       ],
       "EndpointProperties": [
@@ -9376,7 +9397,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Dec 2024 08:12:26 GMT"
+          "Value": "Tue, 10 Dec 2024 08:03:18 GMT"
         }
       ],
       "EndpointProperties": [
@@ -10323,7 +10344,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 02:03:11 GMT"
+          "Value": "Tue, 10 Dec 2024 10:02:57 GMT"
         }
       ],
       "EndpointProperties": [
@@ -10368,7 +10389,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 02:03:11 GMT"
+          "Value": "Tue, 10 Dec 2024 10:02:57 GMT"
         }
       ],
       "EndpointProperties": [
@@ -10621,6 +10642,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-rjhI6jCwgPlix5JpMh04niU9baK/0nt1KWEl5UpH5LE="
+        }
+      ]
+    },
+    {
+      "Route": "_content/AppView/img/slider/amenities-bg.a69xf6twxt.jpg",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\slider\\amenities-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65536"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TjwWKRSeodDLPH0rY/yzxZHXe9jv2dNruoVP/LMTleU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 09:11:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a69xf6twxt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TjwWKRSeodDLPH0rY/yzxZHXe9jv2dNruoVP/LMTleU="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/AppView/img/slider/amenities-bg.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "_content/AppView/img/slider/amenities-bg.jpg",
+      "AssetFile": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\slider\\amenities-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65536"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TjwWKRSeodDLPH0rY/yzxZHXe9jv2dNruoVP/LMTleU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 09:11:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TjwWKRSeodDLPH0rY/yzxZHXe9jv2dNruoVP/LMTleU="
         }
       ]
     },

@@ -37,10 +37,7 @@ namespace AppView.Controllers
             var menuItems = JsonConvert.DeserializeObject<List<MenuItem>>(jsonDataMenuItems);
          
 
-            // 4. Fetch LienHes data
-            var responseLienHes = await _httpClient.GetAsync("https://localhost:7097/api/LienHes");
-            var jsonDataLienHes = await responseLienHes.Content.ReadAsStringAsync();
-            var lienHes = JsonConvert.DeserializeObject<List<LienHe>>(jsonDataLienHes);
+         
            
 
             // 5. Fetch DichVus data
@@ -62,7 +59,7 @@ namespace AppView.Controllers
             var viewModel = new HomeModel
             {
                 DichVus = dichVus,
-                LienHes = lienHes,
+               
                 Welcomes = welcomes,
                 Slides = slides,
                 MenuItems = menuItems,

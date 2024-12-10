@@ -25,10 +25,6 @@ namespace AppData
 		public DbSet<Slide> Slides { get; set; }
 		public DbSet<TinTuc> tinTucs { get; set; }
 		public DbSet<WelCome> welComes { get; set; }
-		public DbSet<FaceBook> faceBooks { get; set; }
-		public DbSet<TikTok> tikTok { get; set; }
-		public DbSet<GG> gGs { get; set; }
-		public DbSet<Inter> inters { get; set; }
 		public DbSet<LoaiPhongDichVu> LoaiPhongDichVu  { get; set; }
         public DbSet<LichDatPhong> LichDatPhongs { get; set; }
 

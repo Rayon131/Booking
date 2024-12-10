@@ -321,6 +321,10 @@
       "PackagePath": "staticwebassets\\img\\room\\room-6.jpg"
     },
     {
+      "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\slider\\amenities-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\slider\\amenities-bg.jpg"
+    },
+    {
       "Id": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppView\\wwwroot\\img\\slider\\header-slider-1.jpg",
       "PackagePath": "staticwebassets\\img\\slider\\header-slider-1.jpg"
     },
