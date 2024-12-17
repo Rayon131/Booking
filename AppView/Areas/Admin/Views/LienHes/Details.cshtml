@@ -1,42 +1,58 @@
 ﻿@model AppData.LienHe
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Chi Tiết Liên Hệ";
 }
 
-<h1>Details</h1>
+<h1 class="text-center">Chi Tiết Liên Hệ</h1>
 
-<div>
-    <h4>LienHe</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SoDienThoai)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SoDienThoai)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Url)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Url)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Logo)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Logo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TrangThai)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TrangThai)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.ID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <dl class="row">
+                    <!-- Số Điện Thoại -->
+                    <dt class="col-sm-4 font-weight-bold">Số điện thoại</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.SoDienThoai)</dd>
+
+                    <!-- URL -->
+                    <dt class="col-sm-4 font-weight-bold">URL</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Url)</dd>
+
+                    <!-- Logo -->
+                    <dt class="col-sm-4 font-weight-bold">Logo</dt>
+                    <dd class="col-sm-8">
+                        @if (!string.IsNullOrEmpty(Model.Logo))
+                        {
+                            <img src="~/img/icon/@Model.Logo" alt="Logo" class="img-thumbnail" style="max-width: 200px; height: auto;" />
+                        }
+                        else
+                        {
+                            <span class="text-muted">Chưa có logo</span>
+                        }
+                    </dd>
+
+                    <!-- Trạng Thái -->
+                    <dt class="col-sm-4 font-weight-bold">Trạng thái</dt>
+                    <dd class="col-sm-8">
+                        @if (Model.TrangThai)
+                        {
+                            <span class="badge badge-success">Hoạt động</span>
+                        }
+                        else
+                        {
+                            <span class="badge badge-secondary">Không hoạt động</span>
+                        }
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <!-- Nút điều hướng -->
+        <div class="text-center">
+            <a asp-action="Edit" asp-route-id="@Model?.ID" class="btn btn-primary">Chỉnh sửa</a>
+            <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+        </div>
+    </div>
 </div>

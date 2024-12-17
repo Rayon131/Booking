@@ -4,45 +4,52 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
-<h4>AnhChiTiet</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+<h1 class="text-center mb-4">Create New Image Detail</h1>
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
         <form asp-action="Create" method="post" enctype="multipart/form-data">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
             <div class="form-group">
-                <label for="imageFile">Image</label>
+                <label for="imageFile" class="control-label">Image</label>
                 <input type="file" name="imageFile" class="form-control" />
                 <span asp-validation-for="Anh" class="text-danger"></span>
             </div>
+
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="TrangThai" /> @Html.DisplayNameFor(model => model.TrangThai)
+                    <input class="form-check-input" asp-for="TrangThai" />
+                    @Html.DisplayNameFor(model => model.TrangThai)
                 </label>
             </div>
+
             <div class="form-group">
-                <label asp-for="IdLoaiPhong" class="control-label"></label>
-                <select asp-for="IdLoaiPhong" class ="form-control" asp-items="ViewBag.IdLoaiPhong"></select>
+                <label asp-for="IdLoaiPhong" class="control-label">Room Type</label>
+                <select asp-for="IdLoaiPhong" class="form-control" asp-items="ViewBag.IdLoaiPhong"></select>
+                <span asp-validation-for="IdLoaiPhong" class="text-danger"></span>
             </div>
-           @*  <div class="form-group">
+
+            @*  <div class="form-group">
                 <label for="IdLoaiPhong">Loại Phòng</label>
                 @Html.DropDownList("IdLoaiPhong", ViewData["IdLoaiPhong"] as SelectList, "Chọn loại phòng", new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.IdLoaiPhong, "", new { @class = "text-danger" })
             </div>
  *@
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+
+            <div class="form-group text-center">
+                <input type="submit" value="Create" class="btn btn-primary btn-lg" />
             </div>
+			<div class="text-center mt-3">
+				<a asp-action="Index" class="btn btn-secondary btn-lg">Back to List</a>
+			</div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

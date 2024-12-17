@@ -4,40 +4,35 @@
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";  // Đảm bảo đường dẫn chính xác đến layout
 }
 
-<h1>Index</h1>
+<h1>Danh sách Logo</h1>
 
-<p>
-    <a href="/Admin/Logoes/Create">Create New</a>
-    
+<p style="margin-left:50%">
+    <a href="/Admin/Logoes/Create" class="btn btn-primary">Thêm Logo Mới</a>
 </p>
-<table class="table">
+
+<table class="table table-striped table-bordered">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Logo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TrangThai)
-            </th>
-            <th></th>
+            <th>Hình ảnh</th>
+            <th>Trạng thái</th>
+            <th>Hành động</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Logo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TrangThai)
-            </td>
-            <td>
-                    <a href="/Admin/Logoes/Edit/@item.ID">Create New</a>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img src="~/img/@item.Logo" alt="Logo" style="max-width: 150px; height: auto;" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TrangThai)
+                </td>
+                <td>
+                    <a href="/Admin/Logoes/Edit/@item.ID" class="btn btn-warning">Sửa</a>
+                    <a href="/Admin/Logoes/Delete/@item.ID" class="btn btn-danger">Xóa</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

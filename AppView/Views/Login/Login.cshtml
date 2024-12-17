@@ -6,24 +6,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng nhập</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-layout {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            width: 100%;
+            max-width: 420px;
+            color: #FFD700;
+        }
+
+            .login-container h2 {
+                text-align: center;
+                margin-bottom: 30px;
+                font-size: 26px;
+                font-weight: bold;
+                color: #FFD700;
+            }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+            .form-group label {
+                display: block;
+                margin-bottom: 10px;
+                font-weight: bold;
+                color: #FFD700;
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 14px;
+                border: 2px solid #FFD700;
+                border-radius: 10px;
+                font-size: 15px;
+                background-color: #222;
+                color: #FFD700;
+            }
+
+                .form-group input:focus {
+                    outline: none;
+                    border-color: #FFA500;
+                    box-shadow: 0 0 8px rgba(255, 165, 0, 0.7);
+                }
+
+        .btn-submit {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(to right, #FFD700, #FFA500);
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            .btn-submit:hover {
+                background: linear-gradient(to right, #FFA500, #FFD700);
+                transform: scale(1.05);
+            }
+
+        .error-message {
+            color: #FFA500;
+            text-align: center;
+            margin-top: 25px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h2>Đăng nhập</h2>
-    <form method="post">
-        <div>
-            <label for="Username">Tài khoản</label>
-            <input type="text" name="Username" id="Username" required />
-        </div>
-        <div>
-            <label for="Password">Mật khẩu</label>
-            <input type="password" name="Password" id="Password" required />
-        </div>
-        <button type="submit">Đăng nhập</button>
-    </form>
+    <div class="main-layout">
+        <div class="content">
+            <div class="login-container">
+                <h2>Đăng nhập</h2>
+                <form method="post">
+                    <div class="form-group">
+                        <label for="Username">Tài khoản</label>
+                        <input type="text" name="Username" id="Username" placeholder="Nhập tài khoản" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">Mật khẩu</label>
+                        <input type="password" name="Password" id="Password" placeholder="Nhập mật khẩu" required />
+                    </div>
+                    <button type="submit" class="btn-submit">Đăng nhập</button>
+                </form>
 
-    @if (ViewData["ErrorMessage"] != null)
-    {
-        <p style="color:red;">@ViewData["ErrorMessage"]</p>
-    }
+                @if (ViewData["ErrorMessage"] != null)
+                {
+                    <p class="error-message">@ViewData["ErrorMessage"]</p>
+                }
+            </div>
+        </div>
+    </div>
 </body>
 </html>

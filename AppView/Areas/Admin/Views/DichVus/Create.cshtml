@@ -4,48 +4,63 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1 class="text-center">@ViewData["Title"]</h1>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-<h4>DichVu</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create" method="post" enctype="multipart/form-data">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Ten" class="control-label"></label>
-                <input asp-for="Ten" class="form-control" />
-                <span asp-validation-for="Ten" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MoTa" class="control-label"></label>
-                <input asp-for="MoTa" class="form-control" />
-                <span asp-validation-for="MoTa" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label for="imageFile">Image</label>
-                <input type="file" name="imageFile" class="form-control" />
-                <span asp-validation-for="Hinh" class="text-danger"></span>
-            </div>
-       
+                <!-- Ten Field -->
+                <div class="form-group">
+                    <label asp-for="Ten" class="control-label">Service Name</label>
+                    <input asp-for="Ten" class="form-control" placeholder="Enter Service Name" />
+                    <span asp-validation-for="Ten" class="text-danger"></span>
+                </div>
 
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="TrangThai" /> @Html.DisplayNameFor(model => model.TrangThai)
-                </label>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+                <!-- MoTa Field -->
+                <div class="form-group">
+                    <label asp-for="MoTa" class="control-label">Description</label>
+                    <input asp-for="MoTa" class="form-control" placeholder="Enter Description" />
+                    <span asp-validation-for="MoTa" class="text-danger"></span>
+                </div>
 
+                <!-- Image File Upload -->
+                <div class="form-group">
+                    <label for="imageFile" class="control-label">Upload Image</label>
+                    <input type="file" name="imageFile" class="form-control-file" />
+                    <span asp-validation-for="Hinh" class="text-danger"></span>
+                </div>
+
+                <!-- TrangThai Checkbox -->
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="TrangThai" />
+                        @Html.DisplayNameFor(model => model.TrangThai)
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success w-100">
+                        Create Service
+                    </button>
+                </div>
+				<!-- Back to List Button -->
+				<div class="text-center mt-3">
+					<a class="btn btn-secondary" asp-action="Index">
+						Back to List
+					</a>
+				</div>
+            </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

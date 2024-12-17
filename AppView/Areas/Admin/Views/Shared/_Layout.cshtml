@@ -58,16 +58,16 @@
                     <a asp-action="Index" asp-controller="LoaiPhongs" data-ajax="true" class="menu-item">
                         <i class="bi bi-house"></i> Loại Phòng
                     </a>
-                    <a asp-action="Index" asp-controller="LoaiPhongDichVus" data-ajax="true" class="menu-item">
+                    @* <a asp-action="Index" asp-controller="LoaiPhongDichVus" data-ajax="true" class="menu-item">
                         <i class="bi bi-grid-3x3-gap"></i> Loại Phòng Dịch Vụ
-                    </a>
+                    </a> *@
                     <a asp-action="Index" asp-controller="AnhChiTiets" data-ajax="true" class="menu-item">
                         <i class="bi bi-images"></i> Ảnh Chi Tiết
                     </a>
                     <a asp-action="Index" asp-controller="TinTucs" data-ajax="true" class="menu-item">
                         <i class="bi bi-newspaper"></i> Tin Tức
                     </a>
-                    <a href="/TaiKhoan/Index" data-ajax="true" class="menu-item">
+                    @* <a href="/TaiKhoan/Index" data-ajax="true" class="menu-item">
                         <i class="bi bi-person"></i> Tài Khoản
                     </a>
                     <a asp-action="Index" asp-controller="FaceBooks" data-ajax="true" class="menu-item">
@@ -81,6 +81,12 @@
                     </a>
                     <a asp-action="Index" asp-controller="Inters" data-ajax="true" class="menu-item">
                         <i class="bi bi-instagram"></i> Instagram
+                    </a>*@
+                    <a asp-action="Index" asp-controller="TaiKhoanns" data-ajax="true" class="menu-item">
+                        <i class="bi bi-newspaper"></i> Tài Khoản
+                    </a> 
+                    <a href="/Login/Logout" class="menu-item btn btn-danger">
+                        Logout
                     </a>
                 </div>
                 <!-- Content Container -->

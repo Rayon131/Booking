@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(30); // Th?i gian h?t h?n Session
+    options.IdleTimeout = TimeSpan.FromMinutes(5); // Th?i gian h?t h?n Session
     options.Cookie.HttpOnly = true; // Ch? có th? truy c?p Session t? server
     options.Cookie.IsEssential = true; // Là cookie quan tr?ng
 });
@@ -36,6 +36,8 @@ if (!app.Environment.IsDevelopment())
 app.UseRouting();
 
 app.UseSession();
+
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

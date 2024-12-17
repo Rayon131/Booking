@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AppData;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
+
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace AppView.Areas.Admin.Controllers
@@ -56,7 +59,6 @@ namespace AppView.Areas.Admin.Controllers
         [HttpPost]
 
 
-        [HttpPost]
         public async Task<IActionResult> Create([Bind("ID,Ten,MoTa,Hinh,LoaiPhongId,TrangThai")] DichVu dichVu, IFormFile imageFile)
         {
             if (!ModelState.IsValid)
@@ -64,27 +66,38 @@ namespace AppView.Areas.Admin.Controllers
                 // Kiểm tra nếu có hình ảnh được tải lên
                 if (imageFile != null && imageFile.Length > 0)
                 {
-                    // Đường dẫn lưu tệp
-                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/icon", imageFile.FileName);
+                    // Đường dẫn thư mục lưu tệp
+                    var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/icon");
+                    var fileName = Path.GetFileNameWithoutExtension(imageFile.FileName);
+                    var fileExtension = Path.GetExtension(imageFile.FileName);
+                    var datePart = DateTime.Now.ToString("yyyyMMdd_HHmmssfff");
+                    var uniqueFileName = $"{fileName}_{datePart}{fileExtension}";
+                    var filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
-                    // Lưu tệp vào thư mục
+                    // Lưu tệp tạm thời
                     using (var stream = new FileStream(filePath, FileMode.Create))
                     {
                         await imageFile.CopyToAsync(stream);
                     }
 
+                    // Ép ảnh về kích thước 50 x 50 px
+                    using (var image = Image.Load(filePath))
+                    {
+                        image.Mutate(x => x.Resize(50, 50)); // Thay đổi kích thước
+                        image.Save(filePath); // Lưu lại ảnh đã thay đổi kích thước
+                    }
+
                     // Cập nhật đường dẫn hình ảnh vào thuộc tính Hinh
-                    dichVu.Hinh = imageFile.FileName;
+                    dichVu.Hinh = uniqueFileName;
                 }
 
-                _context.Add(dichVu);  // Thêm đối tượng DichVu vào CSDL
-                await _context.SaveChangesAsync();  // Lưu thay đổi vào CSDL
-                return RedirectToAction(nameof(Index));  // Điều hướng về trang danh sách
+                _context.Add(dichVu);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
 
-            return View(dichVu);  // Nếu có lỗi, trả về lại form với thông báo lỗi
+            return View(dichVu);
         }
-
 
 
         // GET: DichVu/Edit/5
@@ -119,7 +132,7 @@ namespace AppView.Areas.Admin.Controllers
             }
 
             // Kiểm tra nếu Model không hợp lệ
-          /*  if (ModelState.IsValid)*/
+            if (ModelState.IsValid)
             {
                 // Kiểm tra xem người dùng có tải lên tệp ảnh mới không
                 if (imageFile != null && imageFile.Length > 0)

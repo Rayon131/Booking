@@ -59,7 +59,7 @@ namespace AppView.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,TenTinTucChinh,TenTinTucPhu,HinhAnh1,HinhAnh2,HinhAnh3,NoiDungNgan,NoiDungChiTiet1,NoiDungChiTiet2,NoiDungChiTiet3,NoiDungChiTiet4,TrangThai")] TinTuc tinTuc, IFormFile hinhanh1, IFormFile hinhanh2, IFormFile hinhanh3 )
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
 				if (hinhanh1 != null && hinhanh1.Length > 0)
 				{

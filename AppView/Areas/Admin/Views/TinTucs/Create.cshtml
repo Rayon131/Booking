@@ -4,79 +4,90 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
-<h4>TinTuc</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+<h1 class="text-center mb-4">Create News</h1>
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
         <form asp-action="Create" enctype="multipart/form-data">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
             <div class="form-group">
-                <label asp-for="TenTinTucChinh" class="control-label"></label>
-                <input asp-for="TenTinTucChinh" class="form-control" />
+                <label asp-for="TenTinTucChinh" class="control-label">Main Title</label>
+                <input asp-for="TenTinTucChinh" class="form-control" placeholder="Enter main title" />
                 <span asp-validation-for="TenTinTucChinh" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="TenTinTucPhu" class="control-label"></label>
-                <input asp-for="TenTinTucPhu" class="form-control" />
+                <label asp-for="TenTinTucPhu" class="control-label">Sub Title</label>
+                <input asp-for="TenTinTucPhu" class="form-control" placeholder="Enter subtitle" />
                 <span asp-validation-for="TenTinTucPhu" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="HinhAnh1" class="control-label"></label>
+                <label asp-for="HinhAnh1" class="control-label">Image 1</label>
                 <input type="file" asp-for="HinhAnh1" class="form-control" />
                 <span asp-validation-for="HinhAnh1" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="HinhAnh2" class="control-label"></label>
+                <label asp-for="HinhAnh2" class="control-label">Image 2</label>
                 <input type="file" asp-for="HinhAnh2" class="form-control" />
                 <span asp-validation-for="HinhAnh2" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="HinhAnh3" class="control-label"></label>
+                <label asp-for="HinhAnh3" class="control-label">Image 3</label>
                 <input type="file" asp-for="HinhAnh3" class="form-control" />
                 <span asp-validation-for="HinhAnh3" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="NoiDungNgan" class="control-label"></label>
-                <input asp-for="NoiDungNgan" class="form-control" />
+                <label asp-for="NoiDungNgan" class="control-label">Short Content</label>
+                <textarea asp-for="NoiDungNgan" class="form-control" rows="3" placeholder="Enter short content"></textarea>
                 <span asp-validation-for="NoiDungNgan" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="NoiDungChiTiet1" class="control-label"></label>
-                <input asp-for="NoiDungChiTiet1" class="form-control" />
+                <label asp-for="NoiDungChiTiet1" class="control-label">Detail Content 1</label>
+                <textarea asp-for="NoiDungChiTiet1" class="form-control" rows="3" placeholder="Enter detail content 1"></textarea>
                 <span asp-validation-for="NoiDungChiTiet1" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="NoiDungChiTiet2" class="control-label"></label>
-                <input asp-for="NoiDungChiTiet2" class="form-control" />
+                <label asp-for="NoiDungChiTiet2" class="control-label">Detail Content 2</label>
+                <textarea asp-for="NoiDungChiTiet2" class="form-control" rows="3" placeholder="Enter detail content 2"></textarea>
                 <span asp-validation-for="NoiDungChiTiet2" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="NoiDungChiTiet3" class="control-label"></label>
-                <input asp-for="NoiDungChiTiet3" class="form-control" />
+                <label asp-for="NoiDungChiTiet3" class="control-label">Detail Content 3</label>
+                <textarea asp-for="NoiDungChiTiet3" class="form-control" rows="3" placeholder="Enter detail content 3"></textarea>
                 <span asp-validation-for="NoiDungChiTiet3" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="NoiDungChiTiet4" class="control-label"></label>
-                <input asp-for="NoiDungChiTiet4" class="form-control" />
+                <label asp-for="NoiDungChiTiet4" class="control-label">Detail Content 4</label>
+                <textarea asp-for="NoiDungChiTiet4" class="form-control" rows="3" placeholder="Enter detail content 4"></textarea>
                 <span asp-validation-for="NoiDungChiTiet4" class="text-danger"></span>
             </div>
+
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="TrangThai" /> @Html.DisplayNameFor(model => model.TrangThai)
+                    <input class="form-check-input" asp-for="TrangThai" />
+                    @Html.DisplayNameFor(model => model.TrangThai)
                 </label>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+
+            <div class="form-group text-center">
+                <input type="submit" value="Create" class="btn btn-primary btn-lg" />
             </div>
+			<div class="text-center mt-3">
+				<a asp-action="Index" class="btn btn-secondary">Back to List</a>
+			</div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

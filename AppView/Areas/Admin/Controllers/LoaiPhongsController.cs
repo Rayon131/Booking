@@ -55,7 +55,7 @@ namespace AppView.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("MaLoaiPhong,TenLoaiPhong,MoTa,Anh,GiaGoc,Giuong,Size,GiaGiamGia,TrangThai,SoPhongCon")] LoaiPhong loaiPhong, IFormFile imageFile)
         {
-            if (!ModelState.IsValid)
+            //if (!ModelState.IsValid)
             {
                 if (imageFile != null && imageFile.Length > 0)
                 {

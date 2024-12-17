@@ -1,55 +1,53 @@
 ﻿@model IEnumerable<AppData.DichVu>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "DichVu Index";
 }
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Ten)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MoTa)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Hinh)
-            </th>
-          
-            <th>
-                @Html.DisplayNameFor(model => model.TrangThai)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ten)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MoTa)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Hinh)
-            </td>
-          
-                <td>
-                    @Html.DisplayFor(modelItem => item.TrangThai)
-                </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
+    <h1 class="text-center">@ViewData["Title"]</h1>
+
+    <p class="text-center" style="margin-left: 30%">
+        <a asp-action="Create" class="btn btn-primary">
+           Create New Service
+        </a>
+    </p>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Ten)</th>
+                    <th>@Html.DisplayNameFor(model => model.MoTa)</th>
+                    <th>@Html.DisplayNameFor(model => model.Hinh)</th>
+                    <th>@Html.DisplayNameFor(model => model.TrangThai)</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Ten)</td>
+                        <td>@Html.DisplayFor(modelItem => item.MoTa)</td>
+                        <td>
+                            <img src="~/img/icon/@item.Hinh" alt="Image" class="img-fluid" style="max-width: 100px;">
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => item.TrangThai)</td>
+                        <td class="text-center">
+                            <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning btn-sm">
+                               Edit
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger btn-sm">
+                                 Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+
+@section Scripts {
 }
-    </tbody>
-</table>

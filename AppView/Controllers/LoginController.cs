@@ -84,7 +84,7 @@ namespace AppView.Controllers
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
-            return RedirectToAction("Login", "Account");
+            return RedirectToAction("Login", "Login");
         }
     }
 }

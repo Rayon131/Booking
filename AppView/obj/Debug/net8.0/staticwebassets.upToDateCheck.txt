@@ -27,7 +27,9 @@ wwwroot\img\icon\air-conditioner.svg
 wwwroot\img\icon\air-conditioner-hover.png
 wwwroot\img\icon\bathtub.png
 wwwroot\img\icon\bathtub.svg
+wwwroot\img\icon\bathtub-hover(1).png
 wwwroot\img\icon\bathtub-hover.png
+wwwroot\img\icon\bathtub-hover_20241217_092627546.png
 wwwroot\img\icon\call.png
 wwwroot\img\icon\call.svg
 wwwroot\img\icon\call-hover.png
@@ -43,6 +45,7 @@ wwwroot\img\icon\minibar.svg
 wwwroot\img\icon\minibar-hover.png
 wwwroot\img\icon\Remove-bg.ai_1732501085934.png
 wwwroot\img\icon\room-1.jpg
+wwwroot\img\icon\room-4_20241217_093223603.jpg
 wwwroot\img\icon\Screenshot 2023-10-02 170956.png
 wwwroot\img\icon\shield.png
 wwwroot\img\icon\shield.svg
@@ -81,6 +84,9 @@ wwwroot\img\slider\header-slider-1.jpg
 wwwroot\img\slider\header-slider-2.jpg
 wwwroot\img\slider\header-slider-3.jpg
 wwwroot\img\slider\room-1.jpg
+wwwroot\img\slider\room-1_20241217_094108614.jpg
+wwwroot\img\slider\room-2_20241217_094448600.jpg
+wwwroot\img\slider\room-2_20241217_095036812.jpg
 wwwroot\img\Ticktok.png
 wwwroot\js\booking.js
 wwwroot\js\contact.js

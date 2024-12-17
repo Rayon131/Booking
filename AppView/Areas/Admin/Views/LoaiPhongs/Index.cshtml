@@ -4,80 +4,58 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1 class="text-center">@ViewData["Title"]</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
+<p class="text-center" style="margin-left:80%">
+    <a class="btn btn-primary" asp-action="Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.TenLoaiPhong)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MoTa)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Anh)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GiaGoc)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GiaGiamGia)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TrangThai)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SoPhongCon)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Giuong)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Size)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TenLoaiPhong)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MoTa)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Anh)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GiaGoc)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GiaGiamGia)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TrangThai)
-            </td>
-             <td>
-                @Html.DisplayFor(modelItem => item.SoPhongCon)
-            </td>
-             <td>
-                @Html.DisplayFor(modelItem => item.Giuong)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Size)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.MaLoaiPhong">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MaLoaiPhong">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MaLoaiPhong">Delete</a>
-            </td>
-        </tr>
+
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.TenLoaiPhong)</th>
+                    <th>@Html.DisplayNameFor(model => model.MoTa)</th>
+                    <th>@Html.DisplayNameFor(model => model.Anh)</th>
+                    <th>@Html.DisplayNameFor(model => model.GiaGoc)</th>
+                    <th>@Html.DisplayNameFor(model => model.GiaGiamGia)</th>
+                    <th>@Html.DisplayNameFor(model => model.TrangThai)</th>
+                    <th>@Html.DisplayNameFor(model => model.SoPhongCon)</th>
+                    <th>@Html.DisplayNameFor(model => model.Giuong)</th>
+                    <th>@Html.DisplayNameFor(model => model.Size)</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.TenLoaiPhong)</td>
+                        <td>@Html.DisplayFor(modelItem => item.MoTa)</td>
+                        <td>
+                            <img src="~/img/room/@item.Anh" alt="Image" class="img-fluid" style="max-width: 100px;" />
+                            
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => item.GiaGoc)</td>
+                        <td>@Html.DisplayFor(modelItem => item.GiaGiamGia)</td>
+                        <td>@Html.DisplayFor(modelItem => item.TrangThai)</td>
+                        <td>@Html.DisplayFor(modelItem => item.SoPhongCon)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Giuong)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Size)</td>
+                        <td class="text-center">
+                            <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.MaLoaiPhong">Edit</a>
+                            <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.MaLoaiPhong">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
-    </tbody>
-</table>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G/UeDQp1Nws=",
+  "dgSpecHash": "JIT+DG3DnEQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppData\\AppData.csproj",
+  "projectFilePath": "D:\\oec\\oec\\AppData\\AppData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dattb\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\dattb\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -49,6 +49,7 @@
     "C:\\Users\\dattb\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\dattb\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\dattb\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\dattb\\.nuget\\packages\\sixlabors.imagesharp\\3.1.6\\sixlabors.imagesharp.3.1.6.nupkg.sha512",
     "C:\\Users\\dattb\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "C:\\Users\\dattb\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\dattb\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",

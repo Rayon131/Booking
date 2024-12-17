@@ -4,33 +4,47 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1 class="text-center mb-4">Image Detail</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <dl class="row">
+                <dt class="col-sm-4 font-weight-bold">
+                    @Html.DisplayNameFor(model => model.Anh)
+                </dt>
+                <dd class="col-sm-8">
+                    @if (!string.IsNullOrEmpty(Model.Anh))
+                    {
+                        <img src="~/img/room-slider/@Model.Anh" alt="Image Detail" class="img-fluid" />
+                    }
+                    else
+                    {
+                        <p>No image available</p>
+                    }
+                </dd>
+                <dt class="col-sm-4 font-weight-bold">
+                    @Html.DisplayNameFor(model => model.TrangThai)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.TrangThai)
+                </dd>
+                <dt class="col-sm-4 font-weight-bold">
+                    @Html.DisplayNameFor(model => model.LoaiPhong)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.LoaiPhong.Anh)
+                </dd>
+            </dl>
+        </div>
+    </div>
 
-<div>
-    <h4>AnhChiTiet</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Anh)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Anh)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TrangThai)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TrangThai)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.LoaiPhong)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.LoaiPhong.Anh)
-        </dd>
-    </dl>
+    <div class="text-center mt-4">
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning btn-lg">Edit</a>
+        <a asp-action="Index" class="btn btn-secondary btn-lg">Back to List</a>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

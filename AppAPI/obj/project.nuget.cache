@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qfQiBP3GdzQ=",
+  "dgSpecHash": "Cv2Rcf/Rt6Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dattb\\OneDrive\\Desktop\\Bookings\\AppAPI\\AppAPI.csproj",
+  "projectFilePath": "D:\\oec\\oec\\AppAPI\\AppAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dattb\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\dattb\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -128,6 +128,7 @@
     "C:\\Users\\dattb\\.nuget\\packages\\nuget.projectmodel\\6.11.0\\nuget.projectmodel.6.11.0.nupkg.sha512",
     "C:\\Users\\dattb\\.nuget\\packages\\nuget.protocol\\6.11.0\\nuget.protocol.6.11.0.nupkg.sha512",
     "C:\\Users\\dattb\\.nuget\\packages\\nuget.versioning\\6.11.0\\nuget.versioning.6.11.0.nupkg.sha512",
+    "C:\\Users\\dattb\\.nuget\\packages\\sixlabors.imagesharp\\3.1.6\\sixlabors.imagesharp.3.1.6.nupkg.sha512",
     "C:\\Users\\dattb\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "C:\\Users\\dattb\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "C:\\Users\\dattb\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",

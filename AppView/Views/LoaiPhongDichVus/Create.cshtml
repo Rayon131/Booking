@@ -1,0 +1,29 @@
+﻿@model AppData.LoaiPhongDichVu
+
+<h1>Tạo Liên kết Loại Phòng và Dịch Vụ</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="DichVusID">Chọn Dịch Vụ</label>
+        <select asp-for="DichVusID" class="form-control">
+            <option value="">Chọn Dịch Vụ</option>
+            @foreach (var dichVu in ViewData["DichVus"] as SelectList)
+            {
+                <option value="@dichVu.Value">@dichVu.Text</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="LoaiPhongsId">Chọn Loại Phòng</label>
+        <select asp-for="LoaiPhongsId" class="form-control">
+            <option value="">Chọn Loại Phòng</option>
+            @foreach (var loaiPhong in ViewData["LoaiPhongs"] as SelectList)
+            {
+                <option value="@loaiPhong.Value">@loaiPhong.Text</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Tạo Mới</button>
+</form>

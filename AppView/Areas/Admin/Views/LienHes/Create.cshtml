@@ -1,48 +1,55 @@
 ﻿@model AppData.LienHe
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Tạo Liên Hệ Mới";
 }
 
-<h1>Create</h1>
+<h1 class="text-center">Tạo Liên Hệ Mới</h1>
 
-<h4>LienHe</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create" enctype="multipart/form-data" method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="row justify-content-center">
+    <div class="">
+        <form asp-action="Create" enctype="multipart/form-data" method="post" class="shadow p-4 rounded bg-light">
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+            <!-- Số Điện Thoại -->
             <div class="form-group">
-                <label asp-for="SoDienThoai" class="control-label"></label>
-                <input asp-for="SoDienThoai" class="form-control" />
+                <label asp-for="SoDienThoai" class="control-label">Số điện thoại</label>
+                <input asp-for="SoDienThoai" class="form-control" placeholder="Nhập số điện thoại" />
                 <span asp-validation-for="SoDienThoai" class="text-danger"></span>
             </div>
+
+           @*  <!-- URL -->
             <div class="form-group">
-                <label asp-for="Url" class="control-label"></label>
-                <input asp-for="Url" class="form-control" />
+                <label asp-for="Url" class="control-label">URL</label>
+                <input asp-for="Url" class="form-control" placeholder="Nhập URL" />
                 <span asp-validation-for="Url" class="text-danger"></span>
-            </div>
+            </div> *@
+
+            <!-- Chọn ảnh -->
             <div class="form-group">
-                <label for="imageFile">Image</label>
-                <input type="file" name="imageFile" class="form-control" />
+                <label for="imageFile">Logo</label>
+                <input type="file" name="imageFile" class="form-control-file" />
                 <span asp-validation-for="Logo" class="text-danger"></span>
             </div>
-            <div class="form-group form-check">
+
+            <!-- Trạng thái -->
+            <div class="form-group">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="TrangThai" /> @Html.DisplayNameFor(model => model.TrangThai)
+                    <input type="checkbox" class="form-check-input" asp-for="TrangThai" /> Hoạt động
                 </label>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+
+            <!-- Nút tạo -->
+            <div class="form-group text-center">
+                <input type="submit" value="Tạo mới" class="btn btn-primary px-4" />
+                <a asp-action="Index" class="btn btn-secondary px-4">Hủy</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

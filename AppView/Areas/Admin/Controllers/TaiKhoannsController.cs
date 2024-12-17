@@ -10,7 +10,8 @@ using AppView.ViewModels;
 
 namespace AppView.Areas.Admin.Controllers
 {
-    public class TaiKhoannsController : Controller
+	[Area("Admin")]
+	public class TaiKhoannsController : Controller
     {
         private readonly HotelDbContext _context;
 
@@ -36,12 +37,7 @@ namespace AppView.Areas.Admin.Controllers
 
 
 
-        // Đăng xuất
-        public IActionResult Logout()
-        {
-            HttpContext.Session.Clear();
-            return RedirectToAction("Login", "Account");
-        }
+        
 
         // GET: TaiKhoanns/Details/5
         public async Task<IActionResult> Details(int? id)
