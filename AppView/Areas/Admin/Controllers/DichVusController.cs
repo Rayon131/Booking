@@ -132,7 +132,7 @@ namespace AppView.Areas.Admin.Controllers
             }
 
             // Kiểm tra nếu Model không hợp lệ
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 // Kiểm tra xem người dùng có tải lên tệp ảnh mới không
                 if (imageFile != null && imageFile.Length > 0)

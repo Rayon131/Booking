@@ -8213,11 +8213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\oec\\oec\\AppAPI\\AppAPI.csproj",
+      "projectUniqueName": "D:\\oec\\boking\\AppAPI\\AppAPI.csproj",
       "projectName": "AppAPI",
-      "projectPath": "D:\\oec\\oec\\AppAPI\\AppAPI.csproj",
+      "projectPath": "D:\\oec\\boking\\AppAPI\\AppAPI.csproj",
       "packagesPath": "C:\\Users\\dattb\\.nuget\\packages\\",
-      "outputPath": "D:\\oec\\oec\\AppAPI\\obj\\",
+      "outputPath": "D:\\oec\\boking\\AppAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8238,11 +8238,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\oec\\oec\\AppData\\AppData.csproj": {
-              "projectPath": "D:\\oec\\oec\\AppData\\AppData.csproj"
+            "D:\\oec\\boking\\AppData\\AppData.csproj": {
+              "projectPath": "D:\\oec\\boking\\AppData\\AppData.csproj"
             },
-            "D:\\oec\\oec\\AppView\\AppView.csproj": {
-              "projectPath": "D:\\oec\\oec\\AppView\\AppView.csproj"
+            "D:\\oec\\boking\\AppView\\AppView.csproj": {
+              "projectPath": "D:\\oec\\boking\\AppView\\AppView.csproj"
             }
           }
         }

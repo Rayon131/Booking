@@ -14,9 +14,23 @@ namespace AppView.Controllers
             _context = context;
 
         }
-        public IActionResult Create()
+        public async Task<IActionResult> Create(int? id)
         {
-            ViewData["LoaiPhongID"] = new SelectList(_context.LoaiPhongs, "MaLoaiPhong", "TenLoaiPhong");
+            var loaiPhongs = await _context.LoaiPhongs.ToListAsync();
+
+            // Kiểm tra giá trị id
+            if (id.HasValue)
+            {
+                ViewBag.Message = "ID đã nhận: " + id.Value;
+            }
+            else
+            {
+                ViewBag.Message = "Không có ID.";
+            }
+
+            // Thiết lập danh sách loại phòng cho dropdown với giá trị đã chọn
+            ViewBag.LoaiPhongID = new SelectList(loaiPhongs, "MaLoaiPhong", "TenLoaiPhong", id);
+
             return View();
         }
 

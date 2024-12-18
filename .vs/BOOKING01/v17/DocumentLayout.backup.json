@@ -1,30 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\oec\\oec\\",
+  "WorkspaceRootPath": "D:\\oec\\boking\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\oec\\appview\\areas\\admin\\controllers\\dichvuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\controllers\\dichvuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\areas\\admin\\views\\tintucs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\views\\tintucs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\oec\\appview\\areas\\admin\\controllers\\anhchitietscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\controllers\\anhchitietscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\areas\\admin\\views\\tintucs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\views\\tintucs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\oec\\appview\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\oec\\appview\\areas\\admin\\controllers\\slidescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\controllers\\slidescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A94E4927-8110-4D30-AE96-974F12D41B5E}|AppData\\AppData.csproj|d:\\oec\\oec\\appdata\\hoteldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\middlware\\adminauthorizationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\middlware\\adminauthorizationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\views\\room\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\views\\room\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\views\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\views\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\views\\shared\\components\\room\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\views\\shared\\components\\room\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\views\\shared\\components\\roomsuggestion\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\views\\shared\\components\\roomsuggestion\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\areas\\admin\\views\\anhchitiets\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\views\\anhchitiets\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\areas\\admin\\views\\anhchitiets\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\views\\anhchitiets\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\areas\\admin\\controllers\\anhchitietscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\controllers\\anhchitietscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94E4927-8110-4D30-AE96-974F12D41B5E}|AppData\\AppData.csproj|d:\\oec\\boking\\appdata\\hoteldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A94E4927-8110-4D30-AE96-974F12D41B5E}|AppData\\AppData.csproj|solutionrelative:appdata\\hoteldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\oec\\appview\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|d:\\oec\\boking\\appview\\areas\\admin\\controllers\\slidescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26B1A17D-A672-450D-AE2E-5CE836BD9308}|AppView\\AppView.csproj|solutionrelative:appview\\areas\\admin\\controllers\\slidescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +82,224 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SlidesController.cs",
-              "DocumentMoniker": "D:\\oec\\oec\\AppView\\Areas\\Admin\\Controllers\\SlidesController.cs",
-              "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Controllers\\SlidesController.cs",
-              "ToolTip": "D:\\oec\\oec\\AppView\\Areas\\Admin\\Controllers\\SlidesController.cs*",
-              "RelativeToolTip": "AppView\\Areas\\Admin\\Controllers\\SlidesController.cs*",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAuwIAAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:36:44.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HotelDbContext.cs",
-              "DocumentMoniker": "D:\\oec\\oec\\AppData\\HotelDbContext.cs",
-              "RelativeDocumentMoniker": "AppData\\HotelDbContext.cs",
-              "ToolTip": "D:\\oec\\oec\\AppData\\HotelDbContext.cs",
-              "RelativeToolTip": "AppData\\HotelDbContext.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAqwEAAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:08:25.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DichVusController.cs",
-              "DocumentMoniker": "D:\\oec\\oec\\AppView\\Areas\\Admin\\Controllers\\DichVusController.cs",
-              "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Controllers\\DichVusController.cs",
-              "ToolTip": "D:\\oec\\oec\\AppView\\Areas\\Admin\\Controllers\\DichVusController.cs",
-              "RelativeToolTip": "AppView\\Areas\\Admin\\Controllers\\DichVusController.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAAwLkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:05:14.502Z",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Areas\\Admin\\Views\\TinTucs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Views\\TinTucs\\Edit.cshtml",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Areas\\Admin\\Views\\TinTucs\\Edit.cshtml*",
+              "RelativeToolTip": "AppView\\Areas\\Admin\\Views\\TinTucs\\Edit.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T07:54:11.854Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AnhChiTietsController.cs",
-              "DocumentMoniker": "D:\\oec\\oec\\AppView\\Areas\\Admin\\Controllers\\AnhChiTietsController.cs",
-              "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Controllers\\AnhChiTietsController.cs",
-              "ToolTip": "D:\\oec\\oec\\AppView\\Areas\\Admin\\Controllers\\AnhChiTietsController.cs",
-              "RelativeToolTip": "AppView\\Areas\\Admin\\Controllers\\AnhChiTietsController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:05:06.06Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Areas\\Admin\\Views\\TinTucs\\Index.cshtml",
+              "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Views\\TinTucs\\Index.cshtml",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Areas\\Admin\\Views\\TinTucs\\Index.cshtml",
+              "RelativeToolTip": "AppView\\Areas\\Admin\\Views\\TinTucs\\Index.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwBQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T07:32:40.196Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminAuthorizationMiddleware.cs",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Middlware\\AdminAuthorizationMiddleware.cs",
+              "RelativeDocumentMoniker": "AppView\\Middlware\\AdminAuthorizationMiddleware.cs",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Middlware\\AdminAuthorizationMiddleware.cs",
+              "RelativeToolTip": "AppView\\Middlware\\AdminAuthorizationMiddleware.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T03:18:32.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Program.cs",
+              "RelativeDocumentMoniker": "AppView\\Program.cs",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Program.cs",
+              "RelativeToolTip": "AppView\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T09:39:14.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Views\\Shared\\Components\\RoomSuggestion\\Default.cshtml",
+              "RelativeDocumentMoniker": "AppView\\Views\\Shared\\Components\\RoomSuggestion\\Default.cshtml",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Views\\Shared\\Components\\RoomSuggestion\\Default.cshtml",
+              "RelativeToolTip": "AppView\\Views\\Shared\\Components\\RoomSuggestion\\Default.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAHEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T07:45:35.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "AppView\\Controllers\\BookingController.cs",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "AppView\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwBsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T07:04:50.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Views\\Shared\\Components\\Room\\Default.cshtml",
+              "RelativeDocumentMoniker": "AppView\\Views\\Shared\\Components\\Room\\Default.cshtml",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Views\\Shared\\Components\\Room\\Default.cshtml",
+              "RelativeToolTip": "AppView\\Views\\Shared\\Components\\Room\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T07:46:49.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Views\\Room\\Details.cshtml",
+              "RelativeDocumentMoniker": "AppView\\Views\\Room\\Details.cshtml",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Views\\Room\\Details.cshtml",
+              "RelativeToolTip": "AppView\\Views\\Room\\Details.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAgwBoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T07:45:05.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Views\\Room\\Index.cshtml",
+              "RelativeDocumentMoniker": "AppView\\Views\\Room\\Index.cshtml",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Views\\Room\\Index.cshtml",
+              "RelativeToolTip": "AppView\\Views\\Room\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T07:41:39.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AppView\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "AppView\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T07:59:07.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Views\\Booking\\Create.cshtml",
+              "RelativeDocumentMoniker": "AppView\\Views\\Booking\\Create.cshtml",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Views\\Booking\\Create.cshtml",
+              "RelativeToolTip": "AppView\\Views\\Booking\\Create.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwCUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T07:14:13.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Areas\\Admin\\Views\\AnhChiTiets\\Edit.cshtml",
+              "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Views\\AnhChiTiets\\Edit.cshtml",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Areas\\Admin\\Views\\AnhChiTiets\\Edit.cshtml",
+              "RelativeToolTip": "AppView\\Areas\\Admin\\Views\\AnhChiTiets\\Edit.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T07:23:46.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Areas\\Admin\\Views\\AnhChiTiets\\Details.cshtml",
+              "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Views\\AnhChiTiets\\Details.cshtml",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Areas\\Admin\\Views\\AnhChiTiets\\Details.cshtml",
+              "RelativeToolTip": "AppView\\Areas\\Admin\\Views\\AnhChiTiets\\Details.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T07:56:59.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AnhChiTietsController.cs",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Areas\\Admin\\Controllers\\AnhChiTietsController.cs",
+              "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Controllers\\AnhChiTietsController.cs",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Areas\\Admin\\Controllers\\AnhChiTietsController.cs",
+              "RelativeToolTip": "AppView\\Areas\\Admin\\Controllers\\AnhChiTietsController.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAqwGUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T02:05:06.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HotelDbContext.cs",
+              "DocumentMoniker": "D:\\oec\\boking\\AppData\\HotelDbContext.cs",
+              "RelativeDocumentMoniker": "AppData\\HotelDbContext.cs",
+              "ToolTip": "D:\\oec\\boking\\AppData\\HotelDbContext.cs",
+              "RelativeToolTip": "AppData\\HotelDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T02:08:25.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SlidesController.cs",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Areas\\Admin\\Controllers\\SlidesController.cs",
+              "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Controllers\\SlidesController.cs",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Areas\\Admin\\Controllers\\SlidesController.cs",
+              "RelativeToolTip": "AppView\\Areas\\Admin\\Controllers\\SlidesController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAuwIAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T02:36:44.766Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "LoginController.cs",
-              "DocumentMoniker": "D:\\oec\\oec\\AppView\\Controllers\\LoginController.cs",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "AppView\\Controllers\\LoginController.cs",
-              "ToolTip": "D:\\oec\\oec\\AppView\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Controllers\\LoginController.cs",
               "RelativeToolTip": "AppView\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwFEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwFUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T09:15:55.448Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\oec\\oec\\AppView\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\oec\\boking\\AppView\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AppView\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\oec\\oec\\AppView\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\oec\\boking\\AppView\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "AppView\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEkAAAAAAAAAAADwv1kAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAAFgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-16T08:42:29.501Z",
               "EditorCaption": ""

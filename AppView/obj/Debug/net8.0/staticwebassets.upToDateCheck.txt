@@ -5,10 +5,14 @@ wwwroot\favicon.ico
 wwwroot\img\about\about-1.jpg
 wwwroot\img\about\about-2.jpg
 wwwroot\img\about\about-3.jpg
+wwwroot\img\about\amenities-bg.jpg
 wwwroot\img\about\bathtub.png
 wwwroot\img\about\bathtub.svg
 wwwroot\img\about\bathtub-hover.png
 wwwroot\img\about\call.png
+wwwroot\img\about\header-slider-1.jpg
+wwwroot\img\about\header-slider-2.jpg
+wwwroot\img\about\header-slider-3.jpg
 wwwroot\img\about\room-1.jpg
 wwwroot\img\about\room-2.jpg
 wwwroot\img\about\room-3.jpg
@@ -82,6 +86,7 @@ wwwroot\img\room-slider\room-6.jpg
 wwwroot\img\slider\amenities-bg.jpg
 wwwroot\img\slider\header-slider-1.jpg
 wwwroot\img\slider\header-slider-2.jpg
+wwwroot\img\slider\header-slider-2_20241217_095624534.jpg
 wwwroot\img\slider\header-slider-3.jpg
 wwwroot\img\slider\room-1.jpg
 wwwroot\img\slider\room-1_20241217_094108614.jpg

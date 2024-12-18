@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Cv2Rcf/Rt6Y=",
+  "dgSpecHash": "jZgFmhRRq9A=",
   "success": true,
-  "projectFilePath": "D:\\oec\\oec\\AppAPI\\AppAPI.csproj",
+  "projectFilePath": "D:\\oec\\boking\\AppAPI\\AppAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dattb\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\dattb\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

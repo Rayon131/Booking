@@ -17,77 +17,80 @@
 		</a>
 	</div>
 
-	<table class="table table-bordered table-hover">
-		<thead class="table-light">
-			<tr>
-				<th>@Html.DisplayNameFor(model => model.TenTinTucChinh)</th>
-				<th>@Html.DisplayNameFor(model => model.TenTinTucPhu)</th>
-				<th>@Html.DisplayNameFor(model => model.HinhAnh1)</th>
-				<th>@Html.DisplayNameFor(model => model.HinhAnh2)</th>
-				<th>@Html.DisplayNameFor(model => model.HinhAnh3)</th>
-				<th>@Html.DisplayNameFor(model => model.NoiDungNgan)</th>
-				<th>@Html.DisplayNameFor(model => model.NoiDungChiTiet1)</th>
-				<th>@Html.DisplayNameFor(model => model.NoiDungChiTiet2)</th>
-				<th>@Html.DisplayNameFor(model => model.NoiDungChiTiet3)</th>
-				<th>@Html.DisplayNameFor(model => model.NoiDungChiTiet4)</th>
-				<th>@Html.DisplayNameFor(model => model.TrangThai)</th>
-				<th class="text-center">Hành Động</th>
-			</tr>
-		</thead>
-		<tbody>
-			@foreach (var item in Model)
-			{
-				<tr>
-					<td>@Html.DisplayFor(modelItem => item.TenTinTucChinh)</td>
-					<td>@Html.DisplayFor(modelItem => item.TenTinTucPhu)</td>
-					<td>
-						@if (!string.IsNullOrEmpty(item.HinhAnh1))
-						{
-							<img src="~/img/about/@item.HinhAnh1" alt="Hinh Anh" class="img-thumbnail" style="max-width: 100px;">
-						}
-						else
-						{
-							<span class="text-muted">Không có ảnh</span>
-						}
-					</td>
-					<td>
-						@if (!string.IsNullOrEmpty(item.HinhAnh2))
-						{
-							<img src="~/img/about/@item.HinhAnh2" alt="Hinh Anh" class="img-thumbnail" style="max-width: 100px;">
-						}
-						else
-						{
-							<span class="text-muted">Không có ảnh</span>
-						}
-					</td>
-					<td>
-						@if (!string.IsNullOrEmpty(item.HinhAnh3))
-						{
-							<img src="~/img/about/@item.HinhAnh3" alt="Hinh Anh" class="img-thumbnail" style="max-width: 100px;">
-						}
-						else
-						{
-							<span class="text-muted">Không có ảnh</span>
-						}
-					</td>
-					<td>@Html.DisplayFor(modelItem => item.NoiDungNgan)</td>
-					<td>@Html.DisplayFor(modelItem => item.NoiDungChiTiet1)</td>
-					<td>@Html.DisplayFor(modelItem => item.NoiDungChiTiet2)</td>
-					<td>@Html.DisplayFor(modelItem => item.NoiDungChiTiet3)</td>
-					<td>@Html.DisplayFor(modelItem => item.NoiDungChiTiet4)</td>
-					<td>@Html.DisplayFor(modelItem => item.TrangThai)</td>
-					<td class="text-center">
-						<a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-sm btn-warning me-1">
-							<i class="bi bi-pencil"></i> Sửa
-						</a>
-						<a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-sm btn-danger">
-							<i class="bi bi-trash"></i> Xóa
-						</a>
-					</td>
-				</tr>
-			}
-		</tbody>
-	</table>
+    @functions {
+        public string TrimContent(string content)
+        {
+            if (string.IsNullOrEmpty(content)) return content;
+
+            var words = content.Split(' ');
+            if (words.Length <= 4) return content; // Nếu có 4 từ trở xuống, trả về nguyên nội dung
+
+            return string.Join(" ", words.Take(4)) + "..."; // Cắt và thêm "..."
+        }
+    }
+
+    <style>
+        .table-container {
+            max-height: 350px; /* Chiều cao tối đa cho bảng */
+            overflow-y: auto; /* Thêm thanh cuộn dọc */
+            border: 1px solid #ccc; /* Viền cho bảng */
+            position: relative; /* Để sử dụng cho phần tiêu đề */
+        }
+
+        .table {
+            width: 100%; /* Đảm bảo bảng chiếm toàn bộ chiều rộng */
+            border-collapse: collapse; /* Kết hợp các đường viền */
+            table-layout: fixed; /* Để tiêu đề luôn cố định */
+        }
+
+        th, td {
+            padding: 10px; /* Khoảng cách cho ô */
+            text-align: left; /* Căn trái nội dung */
+            border: 1px solid #ddd; /* Đường viền cho ô */
+        }
+
+        th {
+            background-color: #f2f2f2; /* Màu nền cho tiêu đề */
+            position: sticky; /* Cố định tiêu đề */
+            top: 0; /* Cố định ở trên cùng */
+            z-index: 10; /* Đảm bảo tiêu đề ở trên cùng */
+        }
+    </style>
+  
+
+        <div class="table-container">
+            <table class="table table-bordered table-hover">
+                <thead class="table-light">
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.TenTinTucChinh)</th>
+                        <th>@Html.DisplayNameFor(model => model.NoiDungNgan)</th>
+                        <th>@Html.DisplayNameFor(model => model.TrangThai)</th>
+                        <th class="text-center">Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.TenTinTucChinh)</td>
+                            <td>@TrimContent(item.NoiDungNgan)</td>
+                            <td>@Html.DisplayFor(modelItem => item.TrangThai)</td>
+                            <td class="text-center">
+                                <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-sm btn-warning me-1">
+                                    <i class="bi bi-pencil"></i> Sửa
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-sm btn-danger">
+                                    <i class="bi bi-trash"></i> Xóa
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    
+ 
 </div>
 
 <!-- Bootstrap JS -->

@@ -30,9 +30,9 @@
                         <div class="price">
                             @Model.GiaGiamGia
                         </div>
-                        <a class="book-now" href="#">
-                            ĐẶT NGAY
-                        </a>
+                     
+                        <a href="@Url.Action("Create", "Booking", new { id =Model.MaLoaiPhong })" class="book-now" style="margin:0px">Book Now</a>
+
                     </div>
                 </div>
             </div>

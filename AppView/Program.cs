@@ -1,4 +1,5 @@
 using AppData;
+using AppView.Middlware;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.EntityFrameworkCore;
 
@@ -37,7 +38,7 @@ app.UseRouting();
 
 app.UseSession();
 
-
+app.UseMiddleware<AdminAuthorizationMiddleware>();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

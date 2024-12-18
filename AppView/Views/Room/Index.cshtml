@@ -50,7 +50,8 @@
                                     @loaiPhong.GiaGoc
                                 </p>
                             </h1>
-                            <a class="book-now"  href="#">Book Now</a>
+                            <a href="@Url.Action("Create", "Booking", new { id = loaiPhong.MaLoaiPhong })" class="book-now">Book Now</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -190,7 +191,7 @@
         }
 
             .room-img .box12 img {
-                width: 150%;
+                width: 120%;
                
                 transition: transform 0.3s ease;
             }
